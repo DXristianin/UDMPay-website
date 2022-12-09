@@ -1,0 +1,241 @@
+/* inter-regular - vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic */
+/* inter-100 - vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100;
+  src: url("../fonts/inter-v12-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-100.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/inter-v12-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-100.eot?#iefix") format("embedded-opentype"), url("../fonts/inter-v12-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-100.woff2") format("woff2"), url("../fonts/inter-v12-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-100.woff") format("woff"), url("../fonts/inter-v12-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-100.ttf") format("truetype"), url("../fonts/inter-v12-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-100.svg#Inter") format("svg"); /* Legacy iOS */
+}
+/* inter-200 - vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 200;
+  src: url("../fonts/inter-v12-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-200.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/inter-v12-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-200.eot?#iefix") format("embedded-opentype"), url("../fonts/inter-v12-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-200.woff2") format("woff2"), url("../fonts/inter-v12-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-200.woff") format("woff"), url("../fonts/inter-v12-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-200.ttf") format("truetype"), url("../fonts/inter-v12-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-200.svg#Inter") format("svg"); /* Legacy iOS */
+}
+/* inter-300 - vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/inter-v12-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-300.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/inter-v12-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-300.eot?#iefix") format("embedded-opentype"), url("../fonts/inter-v12-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-300.woff2") format("woff2"), url("../fonts/inter-v12-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-300.woff") format("woff"), url("../fonts/inter-v12-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-300.ttf") format("truetype"), url("../fonts/inter-v12-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-300.svg#Inter") format("svg"); /* Legacy iOS */
+}
+/* inter-regular - vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-v12-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-regular.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/inter-v12-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/inter-v12-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-regular.woff2") format("woff2"), url("../fonts/inter-v12-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-regular.woff") format("woff"), url("../fonts/inter-v12-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-regular.ttf") format("truetype"), url("../fonts/inter-v12-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-regular.svg#Inter") format("svg"); /* Legacy iOS */
+}
+/* inter-500 - vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/inter-v12-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-500.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/inter-v12-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-500.eot?#iefix") format("embedded-opentype"), url("../fonts/inter-v12-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-500.woff2") format("woff2"), url("../fonts/inter-v12-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-500.woff") format("woff"), url("../fonts/inter-v12-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-500.ttf") format("truetype"), url("../fonts/inter-v12-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-500.svg#Inter") format("svg"); /* Legacy iOS */
+}
+/* inter-600 - vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/inter-v12-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-600.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/inter-v12-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-600.eot?#iefix") format("embedded-opentype"), url("../fonts/inter-v12-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-600.woff2") format("woff2"), url("../fonts/inter-v12-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-600.woff") format("woff"), url("../fonts/inter-v12-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-600.ttf") format("truetype"), url("../fonts/inter-v12-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-600.svg#Inter") format("svg"); /* Legacy iOS */
+}
+/* inter-700 - vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-v12-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-700.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/inter-v12-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-700.eot?#iefix") format("embedded-opentype"), url("../fonts/inter-v12-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-700.woff2") format("woff2"), url("../fonts/inter-v12-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-700.woff") format("woff"), url("../fonts/inter-v12-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-700.ttf") format("truetype"), url("../fonts/inter-v12-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-700.svg#Inter") format("svg"); /* Legacy iOS */
+}
+/* inter-800 - vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/inter-v12-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-800.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/inter-v12-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-800.eot?#iefix") format("embedded-opentype"), url("../fonts/inter-v12-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-800.woff2") format("woff2"), url("../fonts/inter-v12-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-800.woff") format("woff"), url("../fonts/inter-v12-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-800.ttf") format("truetype"), url("../fonts/inter-v12-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-800.svg#Inter") format("svg"); /* Legacy iOS */
+}
+/* inter-900 - vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/inter-v12-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-900.eot"); /* IE9 Compat Modes */
+  src: local(""), url("../fonts/inter-v12-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-900.eot?#iefix") format("embedded-opentype"), url("../fonts/inter-v12-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-900.woff2") format("woff2"), url("../fonts/inter-v12-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-900.woff") format("woff"), url("../fonts/inter-v12-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-900.ttf") format("truetype"), url("../fonts/inter-v12-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-900.svg#Inter") format("svg"); /* Legacy iOS */
+}
+/* html, body {
+  font-family: 'Inter', sans-serif;
+  color: var(--black-90);
+} */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  color: var(--black-90);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+}
+
+header {
+  border-bottom: 1px solid #EDEFF2;
+}
+header .row {
+  align-items: center;
+}
+header > .container > .row {
+  min-height: 88px;
+  background: #FFFFFF;
+}
+header > .container > .row > .col:nth-child(1) {
+  flex: 0 1 165px;
+}
+header > .container > .row > .col:nth-child(2) {
+  flex: 0 1 100px;
+}
+header > .container > .row > .col:nth-child(3) {
+  flex: 1 1 40%;
+}
+header > .container > .row > .col:nth-child(4) {
+  flex: 0 1 120px;
+}
+header .map-city {
+  background: #F0F5FF;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 94px;
+  height: 33px;
+  margin-left: 35px;
+  margin-right: 76px;
+}
+header .map-city p {
+  color: #336FEE;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  padding-left: 9px;
+  padding-right: 2px;
+}
+header nav a {
+  font-style: normal;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #333844;
+  padding: 0 24px;
+}
+header .signin {
+  background: #F0F5FF;
+  width: 106px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .signin p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #336FEE;
+  padding-right: 9px;
+}
+
+.slider {
+  border-radius: 0 0 30px 30px;
+  background: url(/img/slider1.png) no-repeat right center, linear-gradient(180deg, rgba(251, 251, 253, 0) 0%, #FBFBFD 100%);
+}
+.slider .container {
+  height: 560px;
+  display: flex;
+  align-items: center;
+}
+.slider .row {
+  flex-direction: column;
+}
+.slider h1 {
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 56px;
+  color: #333844;
+  margin-bottom: 40px;
+}
+.slider .search .container-1 {
+  width: 541px;
+  height: 56px;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+  border-radius: 12px;
+  background: #FFFFFF;
+  border: 1px solid #EDEFF2;
+}
+.slider .search .container-1 .icon {
+  position: absolute;
+  margin-left: 16px;
+  margin-top: 16px;
+  z-index: 1;
+}
+.slider .search .container-1 input#search {
+  width: 100%;
+  height: 54px;
+  border: none;
+  float: left;
+  padding-left: 52px;
+  border-radius: 12px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #818798;
+}
+.slider .search .container-1 input#search::-webkit-input-placeholder {
+  color: #65737e;
+}
+.slider .search .container-1 input#search:-ms-input-placeholder {
+  color: #65737e;
+}
