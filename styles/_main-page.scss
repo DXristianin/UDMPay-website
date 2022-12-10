@@ -149,9 +149,31 @@ header {
 .services {
   padding: 80px 0;
 
+  & > .container > .row > .col:nth-child(1) {
+    flex: 0 1 66.29%;
+  }
+
+  & > .container > .row > .col:nth-child(2) {
+    flex: 0 1 33.71%;
+    padding-left: 16px;
+  }
+
+  & > .container > .row > .col > .row > .service-card {
+    margin-bottom: 16px;
+  }
+
   & > .container > .row > .col > .row {
     flex-wrap: wrap;
     margin: 0 -8px;
+  }
+
+  & > .container > .row > .col > .service-card {
+    margin: 0;
+  }
+
+  & > .container > .row > .col > .col > .service-card {
+    margin: 0;
+    padding-bottom: 50px;
   }
 
   h2 {
@@ -191,6 +213,22 @@ header {
       font-weight: 400;
       font-size: 16px;
       line-height: 24px;
+    }
+  }
+
+  .another-services {
+
+    .another-services-item {
+      display: flex;
+      
+      h3 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: $black-90;
+        padding-left: 16px;
+      }
     }
   }
 }

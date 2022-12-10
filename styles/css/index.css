@@ -108,6 +108,10 @@ li {
   display: inline;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   max-width: 1320px;
   margin: 0 auto;
@@ -243,9 +247,26 @@ header .signin p {
 .services {
   padding: 80px 0;
 }
+.services > .container > .row > .col:nth-child(1) {
+  flex: 0 1 66.29%;
+}
+.services > .container > .row > .col:nth-child(2) {
+  flex: 0 1 33.71%;
+  padding-left: 16px;
+}
+.services > .container > .row > .col > .row > .service-card {
+  margin-bottom: 16px;
+}
 .services > .container > .row > .col > .row {
   flex-wrap: wrap;
   margin: 0 -8px;
+}
+.services > .container > .row > .col > .service-card {
+  margin: 0;
+}
+.services > .container > .row > .col > .col > .service-card {
+  margin: 0;
+  padding-bottom: 50px;
 }
 .services h2 {
   color: #333844;
@@ -281,4 +302,15 @@ header .signin p {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+}
+.services .another-services .another-services-item {
+  display: flex;
+}
+.services .another-services .another-services-item h3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333844;
+  padding-left: 16px;
 }
