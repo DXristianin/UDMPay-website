@@ -16,13 +16,13 @@
       <div class="container">
           <div class="row">
               <div class="col">
-                  <img src="/img/Logo.svg" alt="Logo">
+                  <img class="logo" src="/img/icons/Logo.svg" alt="Logo">
               </div>
               <div class="col">
-                  <div class="map-city"><img src="/img/icon-map.svg" alt="icon-map"><p>Ижевск</p></div>
+                  <div class="map-city computer"><img src="/img/icons/icon-map.svg" alt="icon-map"><p>Ижевск</p></div>
               </div>
               <div class="col">
-                  <nav>
+                  <nav class="computer">
                       <ul>
                           <li><a href="#home">О нас</a></li>
                           <li><a href="#news">Статьи</a></li>
@@ -31,7 +31,10 @@
                   </nav>
               </div>
               <div class="col">
-                  <div class="signin"><p>Войти</p><img src="/img/SignIn.svg" alt="SignIn"></div>
+                  <div class="mobile mobile-toggle">
+                    <img src="/img/icons/toggle-mobile.svg" alt="toggle-mobile">
+                  </div>
+                  <div class="signin computer"><p>Войти</p><img src="/img/icons/SignIn.svg" alt="SignIn"></div>
               </div>
           </div>
       </div>
@@ -44,7 +47,7 @@
         </h1>
         <div class="search">
           <div class="container-1">
-              <span class="icon"><img src="/img/MagnifyingGlass.svg" alt="MagnifyingGlass"></span>
+              <span class="icon"><img src="/img/icons/MagnifyingGlass.svg" alt="MagnifyingGlass"></span>
               <input type="search" id="search" placeholder="Название компании, услуги или ЕЛС" />
           </div>
         </div>
@@ -59,14 +62,14 @@
           <div class="row">
             <div class="service-card">
               <div class="title">
-                <img src="/img/Buildings.svg" alt="Buildings">
+                <img src="/img/icons/Buildings.svg" alt="Buildings">
                 <h3>Коммунальные услуги</h3>
               </div>
               <p>Водоснабжение, электроснабжение, вывоз мусора, отопление, газоснабжение и другое</p>
             </div>
             <div class="service-card">
               <div class="title">
-                <img src="/img/House.svg" alt="House">
+                <img src="/img/icons/House.svg" alt="House">
                 <h3>Кооперативы</h3>
               </div>
               <p>Дачные, гаражные, земельные, 
@@ -74,74 +77,189 @@
             </div>
             <div class="service-card">
               <div class="title">
-                <img src="/img/GraduationCap.svg" alt="GraduationCap">
+                <img src="/img/icons/GraduationCap.svg" alt="GraduationCap">
                 <h3>Образование</h3>
               </div>
               <p>Дошкольное, среднее, высшее и дополнительное образование</p>
             </div>
             <div class="service-card">
               <div class="title">
-                <img src="/img/Car.svg" alt="Car">
+                <img src="/img/icons/Car.svg" alt="Car">
                 <h3>Транспорт</h3>
               </div>
               <p>Транспортный налог, ОСАГО, КАСКО и другое</p>
             </div>
             <div class="service-card">
               <div class="title">
-                <img src="/img/PhoneCall.svg" alt="PhoneCall">
+                <img src="/img/icons/PhoneCall.svg" alt="PhoneCall">
                 <h3>Связь</h3>
               </div>
               <p>Интернет и мобильная связь</p>
             </div>
             <div class="service-card">
               <div class="title">
-                <img src="/img/Television.svg" alt="Television">
+                <img src="/img/icons/Television.svg" alt="Television">
                 <h3>Телевидение</h3>
               </div>
               <p>Оплата спутникового и кабельного ТВ</p>
             </div>
             <div class="service-card">
               <div class="title">
-                <img src="/img/Buildings.svg" alt="Buildings">
+                <img src="/img/icons/Buildings.svg" alt="Buildings">
                 <h3>Транспортные карты</h3>
               </div>
               <p>Пополнение общих и льготных транспортных карт</p>
             </div>
             <div class="service-card">
               <div class="title">
-                <img src="/img/Barbell.svg" alt="Barbell">
+                <img src="/img/icons/Barbell.svg" alt="Barbell">
                 <h3>Спорт</h3>
               </div>
               <p>Секции, фитнес-залы и другое</p>
             </div>
+          </div>
+          <div class="col">
+            <div class="service-card">
+              <div class="title">
+                <img src="/img/icons/Key.svg" alt="Key">
+                <h3>Аренда земли</h3>
+              </div>
+              <p>Аренда земельных участков, муниципальной собственности и сельхоз-угодий</p>
+            </div>
+          </div>
         </div>
-        <div class="col">
+        <div class="col another-services">
           <div class="service-card">
             <div class="title">
-              <img src="/img/Key.svg" alt="Key">
-              <h3>Аренда земли</h3>
+              <button class="accordion active"><h3>Другие услуги</h3></button>
+              <div class="row panel mobile active" style="">
+                <a href="" class="another-services-item">
+                  <img src="/img/icons/Package.svg" alt="Package">
+                  <h3>Подключение оплаты<br>для интернет-магазина</h3>
+                </a>
+                <a href="" class="another-services-item">
+                  <img src="/img/icons/СБП.svg" alt="СБП">
+                  <h3>Подключение оплаты<br>для розничных магазинов</h3>
+                </a>
+                <a href="" class="another-services-item">
+                  <img src="/img/icons/ChartPie.svg" alt="ChartPie">
+                  <h3>Начисления ЖКУ, СНТ, НДС,<br>секции и кружки</h3>
+                </a>
+                <a href="" class="another-services-item">
+                  <img src="/img/icons/CircleWavyCheck.svg" alt="CircleWavyCheck">
+                  <h3>Стать поставщиком услуги</h3>
+                </a>
+                <a href="" class="another-services-item">
+                  <img src="/img/icons/ShieldPlus.svg" alt="ShieldPlus">
+                  <h3>Предложить услугу</h3>
+                </a>
+                <a href="" class="another-services-item">
+                  <img src="/img/icons/СБП.svg" alt="СПБ">
+                  <h3>Подключить СБП для своего бизнеса</h3>
+                </a>
+              </div>
             </div>
-            <p>Аренда земельных участков, муниципальной собственности и сельхоз-угодий</p>
+            <div class="row computer">
+              <a href="" class="another-services-item">
+                <img src="/img/icons/Package.svg" alt="Package">
+                <h3>Подключение оплаты<br>для интернет-магазина</h3>
+              </a>
+              <a href="" class="another-services-item">
+                <img src="/img/icons/СБП.svg" alt="СБП">
+                <h3>Подключение оплаты<br>для розничных магазинов</h3>
+              </a>
+              <a href="" class="another-services-item">
+                <img src="/img/icons/ChartPie.svg" alt="ChartPie">
+                <h3>Начисления ЖКУ, СНТ, НДС,<br>секции и кружки</h3>
+              </a>
+              <a href="" class="another-services-item">
+                <img src="/img/icons/CircleWavyCheck.svg" alt="CircleWavyCheck">
+                <h3>Стать поставщиком услуги</h3>
+              </a>
+              <a href="" class="another-services-item">
+                <img src="/img/icons/ShieldPlus.svg" alt="ShieldPlus">
+                <h3>Предложить услугу</h3>
+              </a>
+              <a href="" class="another-services-item">
+                <img src="/img/icons/СБП.svg" alt="СПБ">
+                <h3>Подключить СБП для своего бизнеса</h3>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col another-services">
-        <div class="service-card">
-          <div class="title">
-            <h3 style="padding: 0;">Другие услуги</h3>
-          </div>
-          <div class="row">
-            <a href="" class="another-services-item">
-              <img src="/img/Package.svg" alt="Package">
-              <h3>Подключение оплаты 
-                для интернет-магазина</h3>
-            </a>
+      <div class="faq">
+        <h2>Ответы на вопросы</h2>
+        <div class="accordion-item">
+          <button class="accordion active">Как узнать свой ЕЛС?</button>
+          <div class="panel active" >
+            <p>Самый простой способ узнать номер ЕЛС — посмотреть его в правом верхнем углу на квитанции ЖКУ, которая приходит в почтовый ящик в подъезде и на электронную почту. Также номер единого лицевого счета можно узнать: в управляющей организации; на портале госуслуг; на сайте ГИС ЖКХ.</p>
           </div>
         </div>
+        <div class="accordion-item">
+          <button class="accordion">Какая комиссия при оплате?</button>
+          <div class="panel">
+            <p>Самый простой способ узнать номер ЕЛС — посмотреть его в правом верхнем углу на квитанции ЖКУ, которая приходит в почтовый ящик в подъезде и на электронную почту. Также номер единого лицевого счета можно узнать: в управляющей организации; на портале госуслуг; на сайте ГИС ЖКХ.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion">Как оплатить квитанцию?</button>
+          <div class="panel">
+            <p>Самый простой способ узнать номер ЕЛС — посмотреть его в правом верхнем углу на квитанции ЖКУ, которая приходит в почтовый ящик в подъезде и на электронную почту. Также номер единого лицевого счета можно узнать: в управляющей организации; на портале госуслуг; на сайте ГИС ЖКХ.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion">Как быстро проходит оплата?</button>
+          <div class="panel">
+            <p>Самый простой способ узнать номер ЕЛС — посмотреть его в правом верхнем углу на квитанции ЖКУ, которая приходит в почтовый ящик в подъезде и на электронную почту. Также номер единого лицевого счета можно узнать: в управляющей организации; на портале госуслуг; на сайте ГИС ЖКХ.</p>
+          </div>
+        </div>
+        <script>
+          var acc = document.getElementsByClassName("accordion");
+          var i;
+          
+          for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+              this.classList.toggle("active");
+              var panel = this.nextElementSibling;
+              var panel2 = this.nextElementSibling.classList[1];
+              if (panel2 == 'panel') {
+                if (panel.classList[3] == "active") {
+                    panel.classList.remove("active");
+                  } else {
+                    panel.classList.toggle("active");
+                  } 
+              } else if (panel.style.maxHeight & panel.classList[1] !== "active") {
+                panel.classList.remove("active");
+              } else {
+                panel.classList.toggle("active");
+                
+              } 
+            });
+          }
+        </script>
       </div>
     </div>
   </section>
-
+  <footer>
+    <div class="container">
+      <div class="row">
+        <nav>
+          <ul>
+              <li><a href="#home">Оплата ЖКХ</a></li>
+              <li><a href="#news">Оплата образования</a></li>
+              <li><a href="#contact">Оплата земли</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="row copyright">
+        <a>© FamilyPay 2022. Все права защищены</a>
+        <a href="#contact">Политика конфиденциальности</a>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
