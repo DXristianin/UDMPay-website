@@ -120,7 +120,7 @@
         right: 0;
         top: 0;
         float: right;
-        margin-left: 5px;
+        margin-left: 0;
         content: "";
         display: block;
         background: url(/img/icons/CaretDown.png) no-repeat;
@@ -171,13 +171,129 @@
         line-height: 24px;
       }
 
-      .panel {
-        transition: all 0.2s ease-in-out;
+      // .panel {
+      //   transition: all 0.2s ease-in-out;
+      // }
+
+      // .panel.active {
+      //   max-height: 800px !important;
+      //   height: fit-content;
+      // }
+    }
+  }
+}
+
+
+@media (max-width: 375px) {
+
+  .container {
+    padding: 0 16px;
+  }
+
+  .slider {
+    border-radius: 0px 0px 16px 16px;
+
+    .container {
+      padding: 80px 16px;
+    
+      & > .row {
+        flex-basis: 100%;
+      }
+    }
+
+    h1 {
+      font-weight: 500;
+      font-size: 34px;
+      line-height: 40px;
+      margin-bottom: 32px;
+    }
+
+    .search .container-1 {
+      width: 100%;
+
+      .icon {
+        display: none;
+      }
+
+      input#search {
+        padding: 12px !important;
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
+
+  .services {
+    padding: 40px 0 80px 0;
+
+    .service-card {
+      flex-basis: 100%;
+      padding: 16px;
+
+      .title {
+        padding: 0;
+      }
+
+      p {
+        display: none;
+      }
+    }
+
+    & > .container > .row > .col > .col > .service-card {
+      padding: 16px;
+    }
+
+    & > .container > .row > .col:nth-child(2) .service-card {
+      padding: 16px;
+
+      .accordion h3 {
+        padding: 0;
+      }
+    }
+
+    & > .container > .row > .col:nth-child(2) .row.panel.mobile.active {
+      padding: 0;
+      padding-top: 8px;
+
+      & > a:last-child {
+        padding-bottom: 0;
+      }
+    }
+
+    .faq {
+
+      .accordion {
+        padding: 16px;
       }
 
       .panel.active {
-        max-height: 800px !important;
-        height: fit-content;
+        padding: 0 16px;
+      }
+    }
+  }
+
+  footer {
+    
+    ul {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: -24px;
+
+      li {
+        display: block;
+        a {
+          display: block;
+          padding-bottom: 24px;
+        }
+      }
+    }
+
+    .copyright {
+      flex-direction: column;
+
+      a:first-child {
+        order: 1;
+        margin-top: 16px;
       }
     }
   }

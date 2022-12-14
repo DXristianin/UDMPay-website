@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://rsms.me/">
   <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </head>
 <body>
   <header>
@@ -31,12 +31,39 @@
                   </nav>
               </div>
               <div class="col">
-                  <div class="mobile mobile-toggle">
+                  <div id="hamburger" class="mobile mobile-toggle">
                     <img src="/img/icons/toggle-mobile.svg" alt="toggle-mobile">
+
+                    <script>
+                    $(document).ready(function(){
+                      $("#hamburger").click(function(){
+                          $("#top").toggleClass("topRotate");
+                          $("#bottom").toggleClass("bottomRotate");
+                          $("#background").toggleClass("expand");
+                    
+                          $("li").show();
+                          $("li").toggleClass("anim");
+                    
+                      });
+                    })
+                    </script>
                   </div>
                   <div class="signin computer"><p>Войти</p><img src="/img/icons/SignIn.svg" alt="SignIn"></div>
               </div>
           </div>
+      </div>
+      <div id="dropDown">
+        <div id="background">
+          <div class="container">
+            <div class="menu">
+              <a>О нас</a>
+              <a>Статьи</a>
+              <a>Форма подключения</a>
+            </div>
+            <div class="map-city mobile"><img src="/img/icons/icon-map.svg" alt="icon-map"><p>Ижевск</p></div>
+          </div>
+        </div>
+        
       </div>
   </header>
   <section class="slider">
@@ -135,15 +162,15 @@
               <div class="row panel mobile active" style="">
                 <a href="" class="another-services-item">
                   <img src="/img/icons/Package.svg" alt="Package">
-                  <h3>Подключение оплаты<br>для интернет-магазина</h3>
+                  <h3>Подключение оплаты <br>для интернет-магазина</h3>
                 </a>
                 <a href="" class="another-services-item">
                   <img src="/img/icons/СБП.svg" alt="СБП">
-                  <h3>Подключение оплаты<br>для розничных магазинов</h3>
+                  <h3>Подключение оплаты <br>для розничных магазинов</h3>
                 </a>
                 <a href="" class="another-services-item">
                   <img src="/img/icons/ChartPie.svg" alt="ChartPie">
-                  <h3>Начисления ЖКУ, СНТ, НДС,<br>секции и кружки</h3>
+                  <h3>Начисления ЖКУ, СНТ, НДС, <br>секции и кружки</h3>
                 </a>
                 <a href="" class="another-services-item">
                   <img src="/img/icons/CircleWavyCheck.svg" alt="CircleWavyCheck">
