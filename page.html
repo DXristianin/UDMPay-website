@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UDM Pay | ЕЛС выбор услуги. 1 этап</title>
+  <link rel="stylesheet" href="./styles/css/index.css">
+  <link rel="preconnect" href="https://rsms.me/">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+  <header>
+      <div class="container">
+          <div class="row">
+              <div class="col">
+                  <img class="logo" src="/img/icons/Logo.svg" alt="Logo">
+              </div>
+              <div class="col">
+                  <div class="map-city computer"><img src="/img/icons/icon-map.svg" alt="icon-map"><p>Ижевск</p></div>
+              </div>
+              <div class="col">
+                  <nav class="computer">
+                      <ul>
+                          <li><a href="#home">О нас</a></li>
+                          <li><a href="#news">Статьи</a></li>
+                          <li><a href="#contact">Форма подключения</a></li>
+                      </ul>
+                  </nav>
+              </div>
+              <div class="col">
+                  <div id="hamburger" class="mobile mobile-toggle">
+                    <img id="toggle-mobile" src="/img/icons/toggle-mobile.svg" alt="toggle-mobile">
+                    <img id="close-mobile" src="/img/icons/close-toggle.svg" alt="close-toggle" style="display: none;">
+
+                    <script>
+                    $(document).ready(function(){
+                      let iftoggle = false;
+                      $("#hamburger").click(function(){
+                          $("#top").toggleClass("topRotate");
+                          $("#bottom").toggleClass("bottomRotate");
+                          $("#background").toggleClass("expand");
+                          $("#dropDown").toggleClass("active");
+                          if(!iftoggle) {
+                            $("#toggle-mobile").hide();
+                            $("#close-mobile").show();
+                            iftoggle = true;
+                          } else {
+                            $("#toggle-mobile").show();
+                            $("#close-mobile").hide();
+                            iftoggle = false;
+                          }
+
+                          $("li").show();
+                          $("li").toggleClass("anim");
+                    
+                      });
+                    })
+                    </script>
+                  </div>
+                  <div class="signin computer hide"><p>Войти</p><img src="/img/icons/SignIn.svg" alt="SignIn"></div>
+              </div>
+          </div>
+      </div>
+      <div id="dropDown">
+        <div id="background">
+          <div class="container">
+            <div class="menu">
+              <a>О нас</a>
+              <a>Статьи</a>
+              <a>Форма подключения</a>
+            </div>
+            <div class="map-city mobile"><img src="/img/icons/icon-map.svg" alt="icon-map"><p>Ижевск</p></div>
+          </div>
+        </div>
+        
+      </div>
+  </header>
+  
+  <div class="main page-service-search">
+    <section>
+      <div class="container">
+        <div class="breadcrumbs">
+          <ol itemscope itemtype="http://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope
+            itemtype="http://schema.org/ListItem">
+            <a itemprop="item" href="/">
+            <span itemprop="name">Ижевск</span></a>
+            </li>
+            <li itemprop="itemListElement" itemscope
+            itemtype="http://schema.org/ListItem">
+            <a itemprop="item" href="/catalog/">
+            <span itemprop="name">Услуги</span></a>
+            </li>
+            <li itemprop="itemListElement" itemscope
+            itemtype="http://schema.org/ListItem">
+            <a itemprop="item" href="/catalog/woman/">
+            <span itemprop="name">Поиск по ЕЛС</span></a>
+            </li>
+          </ol>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="head">
+              <h1>Поиск по единому лицевому счету (ЕЛС)</h1>
+              <div class="search">
+                <div class="container-1">
+                    <form action="">
+                      <input type="search" id="search" placeholder="Название компании, услуги или ЕЛС" />
+                      <button class="btn">Найти</button>
+                    </form>
+                </div>
+              </div>
+            </div>
+            <div class="choose-service-type body">
+              <h2>Выберите тип услуги</h2>
+              <div class="service-card">
+                <div class="title">
+                  <img src="/img/icons/House.svg" alt="House">
+                  <h3>Теплоснабжение</h3>
+                </div>
+              </div>
+              <div class="service-card">
+                <div class="title">
+                  <img src="/img/icons/House.svg" alt="House">
+                  <h3>Водоснабжение</h3>
+                </div>
+              </div>
+              <div class="service-card">
+                <div class="title">
+                  <img src="/img/icons/House.svg" alt="House">
+                  <h3>Электроэнергия</h3>
+                </div>
+              </div>
+              <div class="service-card">
+                <div class="title">
+                  <img src="/img/icons/House.svg" alt="House">
+                  <h3>ЖКУ</h3>
+                </div>
+              </div>
+              <div class="service-card">
+                <div class="title">
+                  <img src="/img/icons/House.svg" alt="House">
+                  <h3>Вывоз ТБО</h3>
+                </div>
+              </div>
+            </div>
+            <div class="footer">
+              <button class="btn" disabled>Оплатить</button>
+            </div>
+          </div>
+          <div class="col">
+            <div class="row">
+              <h2>Как оплатить услугу?</h2>
+              <p><b>1.</b> Противоположная точка зрения подразумевает, что интерактивные прототипы и по сей день остаются уделом либералов, которые жаждут быть превращены в посмешище, хотя само их существование приносит несомненную пользу обществу.</p>
+              <p><b>2.</b> Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции требует определения и уточнения модели развития.</p>
+              <p><b>3.</b> Также как современная методология разработки влечет за собой процесс внедрения и модернизации своевременного выполнения сверхзадачи.</p>
+              <p><b>4.</b> Но выбранный нами инновационный путь, а также свежий взгляд на привычные вещи — безусловно открывает новые горизонты для благоприятных перспектив.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <nav>
+          <ul>
+              <li><a href="#home">Оплата ЖКХ</a></li>
+              <li><a href="#news">Оплата образования</a></li>
+              <li><a href="#contact">Оплата земли</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="row copyright">
+        <a>© FamilyPay 2022. Все права защищены</a>
+        <a href="#contact">Политика конфиденциальности</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -32,15 +32,27 @@
               </div>
               <div class="col">
                   <div id="hamburger" class="mobile mobile-toggle">
-                    <img src="/img/icons/toggle-mobile.svg" alt="toggle-mobile">
+                    <img id="toggle-mobile" src="/img/icons/toggle-mobile.svg" alt="toggle-mobile">
+                    <img id="close-mobile" src="/img/icons/close-toggle.svg" alt="close-toggle" style="display: none;">
 
                     <script>
                     $(document).ready(function(){
+                      let iftoggle = false;
                       $("#hamburger").click(function(){
                           $("#top").toggleClass("topRotate");
                           $("#bottom").toggleClass("bottomRotate");
                           $("#background").toggleClass("expand");
-                    
+                          $("#dropDown").toggleClass("active");
+                          if(!iftoggle) {
+                            $("#toggle-mobile").hide();
+                            $("#close-mobile").show();
+                            iftoggle = true;
+                          } else {
+                            $("#toggle-mobile").show();
+                            $("#close-mobile").hide();
+                            iftoggle = false;
+                          }
+
                           $("li").show();
                           $("li").toggleClass("anim");
                     
@@ -48,7 +60,7 @@
                     })
                     </script>
                   </div>
-                  <div class="signin computer"><p>Войти</p><img src="/img/icons/SignIn.svg" alt="SignIn"></div>
+                  <div class="signin computer hide"><p>Войти</p><img src="/img/icons/SignIn.svg" alt="SignIn"></div>
               </div>
           </div>
       </div>

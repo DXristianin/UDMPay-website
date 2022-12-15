@@ -2,6 +2,10 @@
   display: none;
 }
 
+.hide {
+  display: none !important;
+}
+
 @media (max-width: 1350px) {
   .container {
     padding: 0 32px;
@@ -54,6 +58,10 @@
 
     .logo {
       width: 129px;
+    }
+
+    #hamburger.active {
+
     }
 
     .mobile-toggle {
@@ -184,7 +192,7 @@
 }
 
 
-@media (max-width: 375px) {
+@media (max-width: 550px) {
 
   .container {
     padding: 0 16px;
