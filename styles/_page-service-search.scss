@@ -27,6 +27,42 @@
     }
   }
 
+
+
+  form {
+    display: flex;
+  }
+
+  .search {
+
+    & > .container-1 {
+      border: unset;
+      width: 100% !important;
+      height: auto;
+  
+      input#search {
+        padding: 13px 16px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: $black-90;
+        height: 48px;
+        border: 1px solid #EDEFF2;
+        border-radius: 8px;
+        margin-right: 24px;
+        flex: 0 1 77%;
+      }
+    }
+
+    p {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      color: $black-70;
+      margin-bottom: 4px;
+    }
+  }
+
   & > section > div > .row {
     padding-top: 64px;
     justify-content: space-between;
@@ -53,29 +89,57 @@
             color: $black-90;
             margin-bottom: 24px;
           }
-      
-          form {
-            display: flex;
-          }
-      
-          & > .search > .container-1 {
-            border: unset;
-            width: 100% !important;
-            height: auto;
-            
-      
-            input#search {
-              padding: 12px 16px;
-              font-weight: 400;
-              font-size: 16px;
-              line-height: 24px;
-              color: $black-90;
-              height: 48px;
-              border: 1px solid #EDEFF2;
+
+          .row {
+            margin: 0 -8px;
+
+            .service-item {
+              width: 33.33333333%;
+              background-color: $black-05;
+              padding: 16px;
               border-radius: 8px;
-              margin-right: 24px;
-              flex: 0 1 77%;
+              margin: 0 8px;
+
+              &:hover {
+                background-color: $blue-light;
+                
+                h3 {
+                  color: $blue-base;
+                }
+
+                img {
+                  filter: invert(36%) sepia(97%) saturate(3959%) hue-rotate(215deg) brightness(101%) contrast(87%);
+                }
+              }
+  
+              &.active {
+                border: 1px solid #336FEE;
+                background-color: unset;
+
+                h3 {
+                  color: $blue-base;
+                }
+
+                img {
+                  filter: invert(36%) sepia(97%) saturate(3959%) hue-rotate(215deg) brightness(101%) contrast(87%);
+                }
+              }
+
+              .service-card-big {
+            
+                img {
+                  margin-bottom: 16px;
+                }
+    
+                h3 {
+                  font-weight: 500;
+                  font-size: 16px;
+                  line-height: 24px;
+                }
+              }
             }
+
+            
           }
         }
       
@@ -150,11 +214,6 @@
       
         .footer {
           padding: 24px;
-          
-          .btn:disabled {
-            background: #F3F4F6;
-            color: $black-90;
-          }
         }
       }
   
@@ -220,6 +279,7 @@
   .main > section > div > .row > .col:first-child {
     max-width: 100%;
     margin-bottom: 40px;
+    margin-right: 0;
   }
 
   .main > section > div > .row > .col:last-child {
@@ -229,5 +289,63 @@
 
 @media (max-width: 768px) {
 
+  .main > section > div > .row > .col:first-child {
+    min-width: unset;
+    margin-right: 0;
+  }
+
+  .main > .section {
+
+    .head {
+    }
+    
+    .choose-service-type {
+
+    }
+  }
   
+  .main .footer {
+    
+    button {
+      width: -webkit-fill-available;
+    }
+  }
+
+  .main .breadcrumbs span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .main .breadcrumbs li {
+    padding-right: 4px;
+  }
+
+  .main > section > div > .row {
+    padding-top: 32px;
+  }
+
+  .main > section > div > .row > .col:first-child .head, .main > section > div > .row > .col:first-child .body, .main > section > div > .row > .col:first-child .footer {
+    padding: 24px 16px;
+  }
+
+  .main form {
+    flex-direction: column;
+  
+    input {
+      margin: 0;
+      margin-bottom: 16px;
+    }
+  }
+}
+
+@media (max-width: 560px) {
+  .main > section > div > .row > .col:first-child .head .row {
+    flex-direction: column;
+  }
+
+  .main > section > div > .row > .col:first-child .head .row .service-item {
+    width: -webkit-fill-available;
+    margin-bottom: 8px;
+  }
 }

@@ -194,6 +194,12 @@ h4 {
   padding: 12px 45px;
 }
 
+.btn:disabled {
+  background: #F3F4F6;
+  color: $black-70;
+
+}
+
 
 
 .search {
