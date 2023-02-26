@@ -1,0 +1,131 @@
+.page-payment {
+  background-color: $black-05;
+  .container {
+    max-width: 430px;
+    background-color: white;
+    box-shadow: 0px 12px 32px rgba(77, 77, 77, 0.02);
+    border-radius: 16px;
+    padding: 32px;
+    padding-top: 40px;
+    margin-top: 160px;
+
+    & > div:first-child {
+      text-align: center;
+      padding-bottom: 40px;
+    }
+
+    .notice {
+      border-radius: 8px;
+      background-color: $black-05;
+      padding: 12px;
+      text-align: left;
+      margin-bottom: 16px;
+
+      & > .col:first-child {
+        padding-right: 8px;
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: $black-100;
+      }
+
+      a {
+        color: $blue-base;
+        text-decoration: underline;
+        display: block;
+      }
+      
+      img {
+        margin: 2px;
+      }
+    }
+
+    .document {
+      position: relative;
+
+      & > div:first-child {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: $black-70;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px;
+        border: 1px solid #EDEFF2;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+
+      .btn {
+        width: 100%;
+        margin-top: 16px;
+      }
+
+      .document-select {
+        position: absolute;
+        width: 100%;
+        padding: 8px;
+        margin-top: 4px;
+        /* White */
+        background: #FFFFFF;
+        /* Black-15 */
+        border: 1px solid $black-15;
+        /* Shadow layer */
+        box-shadow: 0px 16px 40px rgba(51, 56, 68, 0.16);
+        border-radius: 8px;
+        display: none;
+
+        a {
+          display: block;
+          text-align: left;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 20px;
+          color: $black-90;
+          padding: 8px;
+        }
+      }
+
+      .document-info {
+        padding-top: 16px;
+
+        input {
+          background: #FFFFFF;
+          border: 1px solid $black-15;
+          border-radius: 8px;
+          padding: 12px;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          color: $black-70;
+          width: 100%;
+
+          &::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+            color:    $black-70;
+          }
+          &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+            color:    $black-70;
+            opacity:  1;
+          }
+          &::-moz-placeholder { /* Mozilla Firefox 19+ */
+            color:    $black-70;
+            opacity:  1;
+          }
+          &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color:    $black-70;
+          }
+          &::-ms-input-placeholder { /* Microsoft Edge */
+            color:    $black-70;
+          }
+          
+          &::placeholder { /* Most modern browsers support this now. */
+            color:    $black-70;
+          }
+        }
+      }
+    }
+  }
+}

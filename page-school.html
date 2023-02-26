@@ -12,7 +12,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script src="./js/main.js"></script>
 </head>
-<body>
+<body class="page-before-school">
   <header>
       <div class="container">
           <div class="row">
@@ -55,7 +55,7 @@
       </div>
   </header>
   
-  <div class="main page-service-search page-before-school">
+  <div class="main page-service-search">
     <section>
       <div class="container">
         <div class="breadcrumbs">
@@ -108,18 +108,48 @@
                 </a>
               </div>
             </div>
-            <div class="choose-service-type body" style="display: none;">
+            <div class="choose-service-type body">
               <div class="search">
                 <p>Поиск по лицевому счету (ЛС)</p>
                 <div class="container-1">
                     <form action="">
                       <input name="search" type="search" id="search" placeholder="Название компании, услуги или ЕЛС" />
                       <button class="btn" disabled>Найти</button>
+                      <div class="search-indicator"><span>Обнаружены совпадения</span></div>
+                      <div class="search-history">
+                        <a href="">История поиска</a>
+                        <a href="">40123456789</a>
+                        <a href="">40123456789</a>
+                        <a href="">40123456789</a>
+                      </div>
                     </form>
+                    <div class="search-result">
+                      <h3>Выберите свои данные</h3>
+                      <div>
+                        <div class="search-result-item active row">
+                          <div class="col">
+                            <div></div>
+                          </div>
+                          <div class="col">
+                            <p>г. Бердск, Радужная ул., д. 21, кв. 10</p>
+                            <p>Лицевой счет: 40123456789</p>
+                          </div>
+                        </div>
+                        <div class="search-result-item row">
+                          <div class="col">
+                            <div></div>
+                          </div>
+                          <div class="col">
+                            <p>г. Новороссийск, Сельская ул., д. 16, кв. 115</p>
+                            <p>Лицевой счет: 40123456789</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                 </div>
               </div>
             </div>
-            <div class="footer" style="display: none;">
+            <div class="footer">
               <button class="btn" disabled>Оплатить</button>
             </div>
           </div>

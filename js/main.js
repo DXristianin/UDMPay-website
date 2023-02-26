@@ -1,3 +1,4 @@
+let chevronFlag = false;
 
 //Header Menu
 $(document).ready(function(){
@@ -56,7 +57,80 @@ $(document).ready(function(){
         document.querySelector('.service-item.active').classList.remove('active');
       }
       this.classList.toggle("active");
+      $(".page-before-school .choose-service-type.body").show();
+      $(".page-before-school .footer").show();
     });
   }
+
+  //Page-before school logics
+
+  $('.page-before-school #search').on('input',function(e){
+    if ($(".page-before-school #search").val().length > 5) {
+      $('.page-before-school .choose-service-type.body .btn').prop('disabled', false);
+      $('.search-indicator').show();
+      $('.page-before-school #search').css({'border': '1px solid #FF8C00'});
+      $('.search-result').show();
+      if ($(window).width()<768) {
+        $('.page-before-school .choose-service-type.body .btn').css({'margin-top': '20px'});
+      }
+      
+    }
+   });
+
+  let searchItem = document.getElementsByClassName("search-result-item");
+
+  for (i = 0; i < searchItem.length; i++) {
+    searchItem[i].addEventListener("click", function() {
+      if (document.querySelector('.search-result-item.active') !== null) {
+        document.querySelector('.search-result-item.active').classList.remove('active');
+      }
+      this.classList.toggle("active");
+      $('.page-before-school .footer .btn').prop('disabled', false);
+      $('.page-before-school .footer .btn').css({'background-color': '#4AAE26'});
+    })
+  }
+
+
+  //Payment.html
+  let chooseDocument = document.getElementById("choose-document");
+
+  chooseDocument.addEventListener("click", function() {
+    if (!chevronFlag) {
+      $('#choose-document img').css('transform', 'rotate(180deg)');
+      $('.document-select').show();
+      chevronFlag = true;
+    } else {
+      $('#choose-document img').css('transform', 'rotate(0deg)');
+      chevronFlag = false;
+      $('.document-select').hide();
+    }
+  })
+
+  let element = document.getElementById('inn');
+  let maskOptions = {
+    mask: '000-000-0000000'
+  };
+  let mask = IMask(element, maskOptions);
+  
+
 })
+
+//Payment.html
+function documentSelect(select, e) {
+  $('#choose-document p').text($(e).text());
+  $('.document-select').hide();
+  $('#choose-document img').css('transform', 'rotate(0deg)');
+  $('.document-info').show();
+  chevronFlag = false;
+  switch (select) {
+    case 1:
+      $('.document-info input').show();
+      break;
+    case 2:
+
+    
+
+    default: break;
+  }
+}
 

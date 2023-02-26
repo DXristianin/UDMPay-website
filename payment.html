@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UDM Pay | Оплата</title>
+  <link rel="stylesheet" href="./styles/css/index.css">
+  <script src="https://unpkg.com/imask"></script>
+  <link rel="preconnect" href="https://rsms.me/">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="./js/main.js"></script>
+</head>
+<body class="page-payment">
+  <div class="container">
+    <div>
+      <img class="logo" src="/img/icons/Logo.svg" alt="Logo">
+    </div>
+    <div class="content">
+      <div class="notice row">
+        <div class="col">
+          <p>Для оплаты счета в бюджетнойорганизации вам нужно указать документ подтверждающий вашу личность.
+            <a>Приказ Минфина России от 12.11.2013 №107н</a>
+          </p>
+        </div>
+        <div class="col">
+          <img src="/img/icons/Crest.svg" alt="Close">
+        </div>
+      </div>
+      <div class="document">
+          <div class="row" id="choose-document">
+            <p>Выберите документ</p>
+            <img src="/img/icons/Chevron.svg" alt="Chevron">
+          </div>
+          <div class="document-select">
+            <a onclick="documentSelect(1,this);">ИНН</a>
+            <a onclick="documentSelect(2,this);">Паспорт</a>
+            <a onclick="documentSelect(3,this);">Водительское удостоверение</a>
+            <a onclick="documentSelect(4,this);">СНИЛС</a>
+          </div>
+          <div class="document-info">
+            <input type="text" name="inn" id="inn" placeholder="Введите ИНН">
+          </div>
+          <button class="btn" disabled>Подтвердить</button>
+        </div>
+    </div>
+  </div>
+</body>
+</html>
