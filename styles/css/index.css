@@ -332,7 +332,7 @@ header #dropDown .map-city {
   background: url(/img/slider1.png) no-repeat right center, linear-gradient(180deg, rgba(251, 251, 253, 0) 0%, #FBFBFD 100%);
 }
 .slider .container {
-  height: 560px;
+  height: 450px;
   display: flex;
   align-items: center;
 }
@@ -408,6 +408,7 @@ header #dropDown .map-city {
   margin: 0;
 }
 .services > .container > .row > .col > .col > .service-card {
+  opacity: 0.5;
   margin: 0;
   padding-bottom: 50px;
 }
@@ -425,6 +426,13 @@ header #dropDown .map-city {
   padding: 24px;
   margin: 0px 8px;
   flex-basis: calc(50% - 16px);
+}
+.services .service-card:hover {
+  background-color: #F3F4F6;
+  cursor: pointer;
+}
+.services .service-card:not(:first-child) {
+  opacity: 0.5;
 }
 .services .service-card .title {
   display: flex;
@@ -451,6 +459,9 @@ header #dropDown .map-city {
 }
 .services .another-services .service-card {
   padding: 32px 16px 24px 16px;
+}
+.services .another-services .service-card:hover {
+  background-color: #F9FAFB;
 }
 .services .another-services .another-services-item {
   display: flex;
@@ -507,7 +518,7 @@ header #dropDown .map-city {
   margin-bottom: 8px;
 }
 .services .faq .accordion-item:hover {
-  background-color: #ccc;
+  background-color: #F3F4F6;
 }
 .services .faq .accordion-item:active, .services .faq .accordion-item:focus, .services .faq .accordion-item:target {
   background-color: #FAFBFD;
