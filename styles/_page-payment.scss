@@ -1,5 +1,6 @@
 .page-payment {
   background-color: $black-05;
+
   .container {
     max-width: 430px;
     background-color: white;
@@ -125,6 +126,127 @@
             color:    $black-70;
           }
         }
+      }
+    }
+  }
+
+  #payment-window {
+    background-color: unset;
+    box-shadow: unset;
+    border-radius: 0;
+
+    .no-comission {
+      background: #F3F4F6;
+      border-radius: 8px 8px 0px 0px;
+
+      .row {
+        justify-content: center;
+        align-items: center;
+        padding: 12px 0;
+      }
+
+      p {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: $black-90;
+        padding-left: 5px;
+      }
+    }
+
+    .qr-code {
+      padding: 32px;
+      background: #FFFFFF;
+      border-radius: 0 0 16px 16px;  
+      margin-bottom: 16px;
+
+      .row {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        h2 {
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 24px;
+          color: $black-90;
+        }
+
+        img {
+          padding: 24px;
+        }
+
+        span {
+          color: $black-60;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+    }
+
+    & > div > .content:nth-child(2) {
+      background: #FFFFFF;
+      border-radius: 16px;  
+      padding: 32px;
+      margin-bottom: 25px;
+
+      h2 {
+        color: $black-90;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        padding-bottom: 24px;
+      }
+
+      .row {
+        flex-direction: column;
+        background: #F6F6F6;
+        border-radius: 8px;
+
+        a {
+          display: block;
+          background: linear-gradient(90deg, #69E200 0%, #24DF64 53.65%, #2ED2C4 100%);
+          border-radius: 8px;
+          width: 100%;
+          position: relative;
+          z-index: 2;
+          padding: 12px 0;
+
+          &::before {
+            content: '&nbsp;';
+            display: block;
+            color: rgba(240, 240, 240, 0);
+            position: absolute;
+            background: linear-gradient(90deg, #69E200 0%, #24DF64 53.65%, #2ED2C4 100%);
+            filter: blur(8px);
+            border-radius: 4px;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            z-index: -1;
+          }
+        }
+
+        span {
+          padding: 8px 0;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 20px;
+          color: $black-70;
+        }
+      }
+    }
+
+    .go-back {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      color: $black-60;
+      display: flex;
+
+      img {
+        margin-right: 7px;
       }
     }
   }

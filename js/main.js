@@ -134,3 +134,6 @@ function documentSelect(select, e) {
   }
 }
 
+function closeInfo(){
+  $('.notice').hide();
+}

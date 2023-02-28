@@ -26,25 +26,52 @@
           </p>
         </div>
         <div class="col">
-          <img src="/img/icons/Crest.svg" alt="Close">
+          <img onclick="closeInfo()" src="/img/icons/Crest.svg" alt="Close">
         </div>
       </div>
       <div class="document">
-          <div class="row" id="choose-document">
-            <p>Выберите документ</p>
-            <img src="/img/icons/Chevron.svg" alt="Chevron">
-          </div>
-          <div class="document-select">
-            <a onclick="documentSelect(1,this);">ИНН</a>
-            <a onclick="documentSelect(2,this);">Паспорт</a>
-            <a onclick="documentSelect(3,this);">Водительское удостоверение</a>
-            <a onclick="documentSelect(4,this);">СНИЛС</a>
-          </div>
-          <div class="document-info">
-            <input type="text" name="inn" id="inn" placeholder="Введите ИНН">
-          </div>
-          <button class="btn" disabled>Подтвердить</button>
+        <div class="row" id="choose-document">
+          <p>Выберите документ</p>
+          <img src="/img/icons/Chevron.svg" alt="Chevron">
         </div>
+        <div class="document-select">
+          <a onclick="documentSelect(1,this);">ИНН</a>
+          <a onclick="documentSelect(2,this);">Паспорт</a>
+          <a onclick="documentSelect(3,this);">Водительское удостоверение</a>
+          <a onclick="documentSelect(4,this);">СНИЛС</a>
+        </div>
+        <div class="document-info">
+          <input type="text" name="inn" id="inn" placeholder="Введите ИНН">
+        </div>
+        <button class="btn" disabled>Подтвердить</button>
+      </div>
+    </div>
+  </div>
+  <div class="container" id="payment-window">
+    <div class="row" style="flex-direction: column;">
+      <div class="content">
+        <div class="no-comission">
+          <div class="row">
+            <img src="/img/icons/СБП.svg" alt="СБП" width="24px" height="24px">
+            <p>Без комиссии</p>
+          </div>
+        </div>
+        <div class="qr-code">
+          <div class="row">
+            <h2>Отсканируйте QR-код в приложении банка или камерой</h2>
+            <img src="/img/icons/qr.svg" alt="qr-code">
+            <span>Как платить через СБП</span>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <h2>Или оплатите через Сбер Pay</h2>
+        <div class="row">
+          <a href=""><img src="/img/icons/Sber-Pay.svg" alt=""></a>
+          <span>Комиссия 12 ₽</span>
+        </div>
+      </div>
+      <a href="" class="go-back"><img src="/img/icons/CaretLeft.svg" alt="CaretLeft"> Вернуться</a>
     </div>
   </div>
 </body>
