@@ -147,3 +147,17 @@ function openModal() {
 function closeModal() {
   document.getElementById("myModal").style.display = "none";
 }
+
+let openCredentailsFlag = 0;
+function openCredentails() {
+  if (openCredentailsFlag) {
+    $('.caret-down').css('transform', 'rotate(0deg)');
+    $('.requisites').hide();
+    openCredentailsFlag = 0;
+  } else {
+    $('.caret-down').css('transform', 'rotate(-180deg)');
+    $('.requisites').show();
+    openCredentailsFlag = 1;
+  }
+  
+}
