@@ -59,34 +59,37 @@
     <div class="payment-info">
       <div class="row" style="flex-direction: column;align-items: flex-start;text-align: left;">
         <h1>Прием платежей за услуги АО «РИР»</h1>
-        <div class="payment-details">
+        <span>3 973 ₽</span>
+        <a class="detailsHover">Детали платежа <img src="/img/icons/Vector.svg" alt="Vector"></a>
+        <div class="modal-details">
           <span>Лицевой счет</span>
           <p>40111111111111111111</p>
           <span>Плательщик</span>
           <p>1-я За Линией Октябрьской Железной Дороги, 9, 26</p>
-          <a class="show-credentails">
-            <div class="col"><img src="/img/icons/Note-green.svg" alt="Note">Показать реквизиты</div>
-            <div class="col"><img src="/img/icons/CaretDownD.svg" alt="CaretDown"></div>
-          </a>
         </div>
       </div>
     </div>
-    <div class="row computer payment-body" style="flex-direction: column;">
+    <div class="row computer" style="flex-direction: column;">
       <div class="content">
+        <div class="no-comission">
+          <div class="row">
+            <img src="/img/icons/СБП.svg" alt="СБП" width="24px" height="24px">
+            <p>Без комиссии</p>
+          </div>
+        </div>
+        <div class="qr-code">
+          <div class="row">
+            <h2>Отсканируйте QR-код в приложении банка или камерой</h2>
+            <img src="/img/icons/qr.svg" alt="qr-code">
+            <span onclick="openModal(1)" style="cursor: pointer;">Как платить через СБП</span>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <h2>Или оплатите через Сбер Pay</h2>
         <div class="row">
-          <p>Рекомендуемая сумма к оплате на 01.11.22</p><img src="/img/icons/WarningCircle.svg" alt="WarningCircle">
-        </div>
-        <div class="input">
-          <label for="total">Сумма к оплате, ₽</label>
-          <input type="number" name="total" placeholder="922,3">
-        </div>
-        <div class="input checkbox">
-          <input checked type="checkbox" class="custom-checkbox" name="acceptance" id="acceptance">
-          <label for="acceptance">Ознакомлен и согласен с условиями&nbsp;<a href="">оферты</a></label>
-        </div>
-        <div class="row">
-          <div class="col"><a onclick="openModal(1)"><img src="/img/icons/СБП.svg" alt="СБП">Без комиссии</a></div>
-          <div class="col"><a href=""><img src="/img/icons/Sber-Pay.svg" alt="Sber-Pay">Комиссия – 12 ₽</a></div>
+          <a href=""><img src="/img/icons/Sber-Pay.svg" alt="Sber-Pay"></a>
+          <span>Комиссия 12 ₽</span>
         </div>
       </div>
     </div>
@@ -100,6 +103,7 @@
         <span>Комиссия 12 ₽</span>
       </div>
     </div>
+    <a href="" class="go-back"><img src="/img/icons/CaretLeft.svg" alt="CaretLeft"> Вернуться</a>
     <div class="how-to-pay" id="myModal">
       <div class="container">
         <span class="close cursor" style="cursor: pointer;" onclick="closeModal(1)"><img src="/img/icons/Close.svg" alt=""></span>
@@ -114,40 +118,5 @@
       </div>
     </div>
   </div>
-  <div class="bottom-buttons">
-    <div class="container">
-      <div class="row">
-        <a href=""><img src="/img/icons/Note-blue.svg" alt="Note-blue">Подать показания</a>
-        <a href=""><img src="/img/icons/ChatsTeardrop.svg" alt="ChatsTeardrop">Задать вопрос УК или РСО</a>
-      </div>
-      <a href=""><img src="/img/icons/Warning.svg" alt="Warning">Вызвать специалиста или сообщить об аварийной ситуации</a>
-    </div>
-  </div>
-  <div class="bookmarks">
-    <div class="container">
-      <div class="row">
-        <img src="/img/icons/BookmarkSimple.svg" alt="BookmarkSimple">
-        <p>Добавить страницу в закладки браузера</p>
-        <span>Чтобы в следующий раз не вводить номер лицевого счёта</span>
-      </div>
-    </div>
-  </div>
-  <footer>
-    <div class="container">
-      <div class="row">
-        <nav>
-          <ul>
-              <li><a href="#home">Оплата ЖКХ</a></li>
-              <li><a href="#news">Оплата образования</a></li>
-              <li><a href="#contact">Оплата земли</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="row copyright">
-        <a>© FamilyPay 2022. Все права защищены</a>
-        <a href="#contact">Политика конфиденциальности</a>
-      </div>
-    </div>
-  </footer>
 </body>
 </html>
