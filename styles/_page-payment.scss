@@ -555,7 +555,7 @@
       display: none;
       position: fixed;
       z-index: 100;
-      padding-top: 30%;
+      padding-top: 30vh;
       left: 0;
       top: 0;
       width: 100%;
@@ -619,6 +619,50 @@
         }
       }
     }
+
+    #myModalPayment {
+      display: block;
+
+      .no-comission {
+        border-radius: 16px 16px 0 0;
+      }
+
+      .container {
+        padding: 0;
+
+        .body {
+          padding: 32px;
+          text-align: center;
+          
+          .row {
+            flex-direction: column;
+            align-items: center;
+
+            img {
+              width: fit-content;
+              text-align: center;
+              margin-bottom: 24px;
+            }
+
+            span {
+              color: $black-60;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 24px;
+            }
+          }
+
+          h2 {
+            color: $black-90;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 24px;
+            text-align: center;
+            padding-bottom: 24px;
+          }
+        }
+      }
+    }
   }
 
   .bottom-buttons {
@@ -676,6 +720,7 @@
     .container {
       max-width: 407px;
       .row {
+        text-align: center;
         justify-content: center;
         align-items: center;
         flex-direction: column;
@@ -707,15 +752,38 @@
 @media (max-width: 768px) {
 
   .page-payment {
-    background-color: white;
+
+    header {
+      border: unset;
+
+      img {
+        width: 100%;
+      }
+    }
+    // background-color: white;
 
     & > .container {
-      padding: 0 16px;
+      padding: 0;
     }
 
     #payment-window {
-      padding: 0 16px;
+      padding: 0;
       padding-bottom: 50px;
+      margin-top: 50px;
+
+      h1 {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 28px;
+      }
+
+      .payment-details {
+        padding-top: 24px;
+      }
+
+      .payment-info {
+        padding: 24px;
+      }
 
 
       .modal-details {
@@ -784,11 +852,55 @@
         
       }
 
+
+      .payment-body {
+        padding: 24px;
+
+        .input {
+
+          input[type='number'] {
+            width: 100%;
+          }
+        }
+      }
+
+      .row.mobile.payment {
+        padding: 0 24px;
+      }
+
       .go-back {
         margin-top: 24px;
       }
+
+
     }
 
+    .bottom-buttons {
+      .container {
+        padding: 24px;
+        .row {
+          flex-direction: column;
+          margin: 0;
+          a {
+            width: 100%;
+            margin: 0;
+            
+            &:first-child {
+              
+              margin-bottom: 16px;
+            }
+          }
+        }
 
+        & > a {
+          width: 100%;
+          padding: 12px 10px;
+        }
+      }
+    }
+
+    .bookmarks {
+      text-align: center;
+    }
   }
 }

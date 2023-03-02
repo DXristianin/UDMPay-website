@@ -139,13 +139,32 @@ function closeInfo(){
 }
 
 // Open the Modal
-function openModal() {
-  document.getElementById("myModal").style.display = "block";
+function openModal(modal) {
+  if (modal == 1) {
+    document.getElementById("myModal").style.display = "block";
+  } else if (modal == 2) {
+    document.getElementById("myModalPayment").style.display = "block";
+  } else if (modal == 3) {
+    document.getElementById("myModalPayment").style.display = "none";
+    document.getElementById("myModal").style.display = "block";
+  } else {
+    document.getElementById("myModal").style.display = "block";
+  }
+  
 }
 
 // Close the Modal
-function closeModal() {
-  document.getElementById("myModal").style.display = "none";
+function closeModal(modal) {
+  if (modal == 1) {
+    document.getElementById("myModal").style.display = "none";
+  } else if (modal == 2) {
+    document.getElementById("myModalPayment").style.display = "none";
+  } else if (modal == 3) {
+    document.getElementById("myModal").style.display = "none";
+    document.getElementById("myModalPayment").style.display = "block";
+  } else {
+    document.getElementById("myModal").style.display = "none";
+  }
 }
 
 let openCredentailsFlag = 0;

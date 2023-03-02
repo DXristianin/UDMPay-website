@@ -1396,7 +1396,7 @@ footer .copyright a {
   display: none;
   position: fixed;
   z-index: 100;
-  padding-top: 30%;
+  padding-top: 30vh;
   left: 0;
   top: 0;
   width: 100%;
@@ -1454,6 +1454,43 @@ footer .copyright a {
   text-align: right;
   font-weight: 600;
 }
+.page-payment #payment-window #myModalPayment {
+  display: block;
+}
+.page-payment #payment-window #myModalPayment .no-comission {
+  border-radius: 16px 16px 0 0;
+}
+.page-payment #payment-window #myModalPayment .container {
+  padding: 0;
+}
+.page-payment #payment-window #myModalPayment .container .body {
+  padding: 32px;
+  text-align: center;
+}
+.page-payment #payment-window #myModalPayment .container .body .row {
+  flex-direction: column;
+  align-items: center;
+}
+.page-payment #payment-window #myModalPayment .container .body .row img {
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.page-payment #payment-window #myModalPayment .container .body .row span {
+  color: #ABAFBA;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.page-payment #payment-window #myModalPayment .container .body h2 {
+  color: #333844;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  padding-bottom: 24px;
+}
 .page-payment .bottom-buttons {
   padding-top: 24px;
   padding-bottom: 50px;
@@ -1503,6 +1540,7 @@ footer .copyright a {
   max-width: 407px;
 }
 .page-payment .bookmarks .container .row {
+  text-align: center;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -1524,15 +1562,30 @@ footer .copyright a {
 }
 
 @media (max-width: 768px) {
-  .page-payment {
-    background-color: white;
+  .page-payment header {
+    border: unset;
+  }
+  .page-payment header img {
+    width: 100%;
   }
   .page-payment > .container {
-    padding: 0 16px;
+    padding: 0;
   }
   .page-payment #payment-window {
-    padding: 0 16px;
+    padding: 0;
     padding-bottom: 50px;
+    margin-top: 50px;
+  }
+  .page-payment #payment-window h1 {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .page-payment #payment-window .payment-details {
+    padding-top: 24px;
+  }
+  .page-payment #payment-window .payment-info {
+    padding: 24px;
   }
   .page-payment #payment-window .modal-details {
     top: 155px !important;
@@ -1588,8 +1641,38 @@ footer .copyright a {
     color: #5C6170;
     text-align: center;
   }
+  .page-payment #payment-window .payment-body {
+    padding: 24px;
+  }
+  .page-payment #payment-window .payment-body .input input[type=number] {
+    width: 100%;
+  }
+  .page-payment #payment-window .row.mobile.payment {
+    padding: 0 24px;
+  }
   .page-payment #payment-window .go-back {
     margin-top: 24px;
+  }
+  .page-payment .bottom-buttons .container {
+    padding: 24px;
+  }
+  .page-payment .bottom-buttons .container .row {
+    flex-direction: column;
+    margin: 0;
+  }
+  .page-payment .bottom-buttons .container .row a {
+    width: 100%;
+    margin: 0;
+  }
+  .page-payment .bottom-buttons .container .row a:first-child {
+    margin-bottom: 16px;
+  }
+  .page-payment .bottom-buttons .container > a {
+    width: 100%;
+    padding: 12px 10px;
+  }
+  .page-payment .bookmarks {
+    text-align: center;
   }
 }
 .mobile {

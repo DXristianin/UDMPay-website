@@ -101,7 +101,7 @@
         </div>
       </div>
     </div>
-    <div class="row computer payment-body" style="flex-direction: column;">
+    <div class="row payment-body" style="flex-direction: column;">
       <div class="content">
         <div class="row">
           <p>Рекомендуемая сумма к оплате на 01.11.22</p><img src="/img/icons/WarningCircle.svg" alt="WarningCircle">
@@ -112,15 +112,15 @@
         </div>
         <div class="input checkbox">
           <input checked type="checkbox" class="custom-checkbox" name="acceptance" id="acceptance">
-          <label for="acceptance">Ознакомлен и согласен с условиями&nbsp;<a href="">оферты</a></label>
+          <label for="acceptance"><p>Ознакомлен и согласен с условиями <a href="">оферты</a></p></label>
         </div>
-        <div class="row">
-          <div class="col"><a onclick="openModal(1)"><img src="/img/icons/СБП.svg" alt="СБП">Без комиссии</a></div>
+        <div class="row computer">
+          <div class="col"><a onclick="openModal(2)"><img src="/img/icons/СБП.svg" alt="СБП">Без комиссии</a></div>
           <div class="col"><a href=""><img src="/img/icons/Sber-Pay.svg" alt="Sber-Pay">Комиссия – 12 ₽</a></div>
         </div>
       </div>
     </div>
-    <div class="row mobile">
+    <div class="row mobile payment">
       <div class="row">
         <a class="SBP"><img src="/img/icons/СБП.svg" alt="СБП"> СБП</a>
         <span>Без комиссии</span>
@@ -132,7 +132,7 @@
     </div>
     <div class="how-to-pay" id="myModal">
       <div class="container">
-        <span class="close cursor" style="cursor: pointer;" onclick="closeModal(1)"><img src="/img/icons/Close.svg" alt=""></span>
+        <span class="close cursor" style="cursor: pointer;" onclick="closeModal(3)"><img src="/img/icons/Close.svg" alt=""></span>
         <div class="row" style="flex-direction: column;">
           <h2>Как оплатить через QR-код?</h2>
           <ol>
@@ -140,6 +140,26 @@
             <li>Краткое описание второго пунктав две строки</li>
             <li>Краткое описание третьего пунктав две строки</li>
           </ol>
+        </div>
+      </div>
+    </div>
+    <div class="how-to-pay sbp-payment" id="myModalPayment">
+      <div class="container">
+        <span class="close cursor" style="cursor: pointer;" onclick="closeModal(2)"><img src="/img/icons/Close.svg" alt=""></span>
+        <div class="row" style="flex-direction: column;">
+          <div class="no-comission">
+            <div class="row">
+              <img src="/img/icons/СБП.svg" alt="СБП" width="24px" height="24px">
+              <p>Без комиссии</p>
+            </div>
+          </div>
+          <div class="body">
+            <div class="row">
+              <h2>Отсканируйте QR-код в приложении банка или камерой</h2>
+              <img src="/img/icons/qr.svg" alt="qr">
+              <span onclick="openModal(3)" style="cursor: pointer;">Как платить через СБП</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
