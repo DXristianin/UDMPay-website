@@ -130,13 +130,21 @@
           font-weight: 500;
           font-size: 16px;
           line-height: 24px;
+        }
 
-          &:first-child, &:last-child {
-            background: url('/img/icons/CaretLeft.svg') no-repeat center;
+        .prev {
+          background: url('/img/icons/CaretLeft.svg') no-repeat center;
+
+          a {
+            background: none !important;
           }
+        }
 
-          &:last-child {
-            background: url('/img/icons/CaretRight.svg') no-repeat center;
+        .next {
+          background: url('/img/icons/CaretRight.svg') no-repeat center;
+
+          a {
+            background: none !important;
           }
         }
       }

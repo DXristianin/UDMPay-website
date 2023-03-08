@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* inter-regular - vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic */
 /* inter-100 - vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic */
 @font-face {
@@ -78,6 +79,18 @@
 body, html {
   margin: 0;
   padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  /* Чтобы занимал оставшееся пространство */
+  flex-grow: 1;
+  background: red;
 }
 
 * {
@@ -1932,11 +1945,17 @@ footer .copyright a {
   font-size: 16px;
   line-height: 24px;
 }
-.page-category .content .categories .pagination a:first-child, .page-category .content .categories .pagination a:last-child {
+.page-category .content .categories .pagination .prev {
   background: url("/img/icons/CaretLeft.svg") no-repeat center;
 }
-.page-category .content .categories .pagination a:last-child {
+.page-category .content .categories .pagination .prev a {
+  background: none !important;
+}
+.page-category .content .categories .pagination .next {
   background: url("/img/icons/CaretRight.svg") no-repeat center;
+}
+.page-category .content .categories .pagination .next a {
+  background: none !important;
 }
 
 @media (max-width: 768px) {
@@ -2189,5 +2208,11 @@ footer .copyright a {
   footer .copyright a:first-child {
     order: 1;
     margin-top: 16px;
+  }
+}
+@media (max-width: 380px) {
+  h1 {
+    font-size: 28px !important;
+    line-height: 34px !important;
   }
 }
