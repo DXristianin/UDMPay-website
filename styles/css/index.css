@@ -1832,12 +1832,20 @@ footer .copyright a {
   width: fit-content;
   margin-bottom: 24px;
 }
+.page-category-search .category-search-content > .row .search form {
+  position: relative;
+}
 .page-category-search .category-search-content > .row .search form input#search {
   flex: 0 1 70% !important;
 }
 .page-category-search .category-search-content > .row .search form .btn {
   flex: 1 1 25%;
   padding: 12px 0;
+}
+.page-category-search .category-search-content > .row .search form .help-block {
+  position: absolute;
+  bottom: -25px;
+  color: red;
 }
 
 .page-category .main {
@@ -1949,13 +1957,15 @@ footer .copyright a {
 .page-category .content .categories .pagination .prev {
   background: url("/img/icons/CaretLeft.svg") no-repeat center;
 }
-.page-category .content .categories .pagination .prev a {
+.page-category .content .categories .pagination .prev a, .page-category .content .categories .pagination .prev span {
+  opacity: 0;
   background: none !important;
 }
 .page-category .content .categories .pagination .next {
   background: url("/img/icons/CaretRight.svg") no-repeat center;
 }
-.page-category .content .categories .pagination .next a {
+.page-category .content .categories .pagination .next a, .page-category .content .categories .pagination .next span {
+  opacity: 0;
   background: none !important;
 }
 

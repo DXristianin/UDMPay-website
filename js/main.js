@@ -64,6 +64,10 @@ $(document).ready(function(){
 
   //Page-before school logics
 
+  if ($('.page-before-school #search').val().length > 5) {
+    $('.page-before-school .choose-service-type.body .btn').prop('disabled', false);
+  }
+
   $('.page-before-school #search').on('input',function(e){
     if ($(".page-before-school #search").val().length > 5) {
       $('.page-before-school .choose-service-type.body .btn').prop('disabled', false);
@@ -123,10 +127,17 @@ $(document).ready(function(){
   }
 
   let element = document.getElementById('inn');
+  let element2 = document.querySelector('.category-search-input');
   let maskOptions = {
     mask: '000-000-0000000'
   };
-  let mask = IMask(element, maskOptions);
+  if (element) {
+    let mask = IMask(element, maskOptions);
+  } else {
+    let mask2 = IMask(element2, maskOptions);
+  }
+  
+  
 
   
 })

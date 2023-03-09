@@ -135,7 +135,8 @@
         .prev {
           background: url('/img/icons/CaretLeft.svg') no-repeat center;
 
-          a {
+          a, span {
+            opacity: 0;
             background: none !important;
           }
         }
@@ -143,7 +144,8 @@
         .next {
           background: url('/img/icons/CaretRight.svg') no-repeat center;
 
-          a {
+          a, span {
+            opacity: 0;
             background: none !important;
           }
         }
