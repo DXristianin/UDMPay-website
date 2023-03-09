@@ -63,10 +63,12 @@ $(document).ready(function(){
   }
 
   //Page-before school logics
-
-  if ($('.page-before-school #search').val().length > 5) {
-    $('.page-before-school .choose-service-type.body .btn').prop('disabled', false);
+  if ($('.page-before-school #search').val()) {
+    if ($('.page-before-school #search').val().length > 5) {
+      $('.page-before-school .choose-service-type.body .btn').prop('disabled', false);
+    }
   }
+  
 
   $('.page-before-school #search').on('input',function(e){
     if ($(".page-before-school #search").val().length > 5) {
@@ -96,6 +98,12 @@ $(document).ready(function(){
 
   //Page-category
   console.log('1233');
+  if ($('.page-category-search #search').val()) {
+    if ($('.page-category-search #search').val().length > 5) {
+      $('.page-category-search .btn').prop('disabled', false);
+    }
+  }
+
   $('.page-category-search #search').on('input',function(e){
     console.log('123');
     console.log($(".page-category-search #search").val());

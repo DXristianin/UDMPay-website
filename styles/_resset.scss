@@ -197,6 +197,7 @@ h4 {
 
 .btn {
   all: unset;
+  position: relative;
   background: $blue-base;
   border-radius: 8px;
   font-weight: 500;
@@ -212,6 +213,41 @@ h4 {
   background: #F3F4F6;
   color: $black-70;
 
+}
+
+.btn-loading {
+  min-height: 47.5px;
+  background-color: $black-10;
+}
+
+.btn-loading span {
+  display: none;
+}
+
+.btn-loading::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border: 2px solid transparent;
+  border-top-color: $black-90;
+  border-radius: 50%;
+  animation: button-loading-spinner 1s ease-in-out infinite;
+}
+
+@keyframes button-loading-spinner {
+  from {
+      transform: rotate(0turn);
+  }
+
+  to {
+      transform: rotate(1turn);
+  }
 }
 
 

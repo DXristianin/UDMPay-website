@@ -144,6 +144,7 @@ h4 {
 
 .btn {
   all: unset;
+  position: relative;
   background: #336FEE;
   border-radius: 8px;
   font-weight: 500;
@@ -160,6 +161,39 @@ h4 {
   color: #818798;
 }
 
+.btn-loading {
+  min-height: 47.5px;
+  background-color: #F3F4F6;
+}
+
+.btn-loading span {
+  display: none;
+}
+
+.btn-loading::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border: 2px solid transparent;
+  border-top-color: #333844;
+  border-radius: 50%;
+  animation: button-loading-spinner 1s ease-in-out infinite;
+}
+
+@keyframes button-loading-spinner {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
 .search .container-1 {
   width: 541px;
   height: 56px;
