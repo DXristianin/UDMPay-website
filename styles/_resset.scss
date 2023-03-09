@@ -328,3 +328,52 @@ input[aria-invalid=true] {
     line-height: 24px;
   }
 }
+
+
+.page-404 {
+
+  & * {
+    text-align: center;
+  }
+
+  .container {
+
+    .row {
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 0;
+
+      span {
+        font-weight: 600;
+        font-size: 120px;
+        line-height: 145px;
+        color: $blue-base;
+        padding-top: 120px;
+        padding-bottom: 40px;
+      }
+
+      h1 {
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 40px;
+        padding-bottom: 40px;
+      }
+
+      .btn {
+        color: $blue-base;
+        background-color: $blue-light;
+        padding: 12px 28px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+
+    .btm {
+      width: 100%;
+    }
+  }
+}

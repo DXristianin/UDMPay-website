@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UDM Pay</title>
+  <link rel="stylesheet" href="./styles/css/index.css">
+  <link rel="preconnect" href="https://rsms.me/">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="./js/main.js"></script>
+</head>
+<body>
+  <header>
+      <div class="container">
+          <div class="row">
+              <div class="col">
+                  <a href="/"><img class="logo" src="/img/icons/Logo.svg" alt="Logo"></a>
+              </div>
+              <div class="col">
+                  <div class="map-city computer"><img src="/img/icons/icon-map.svg" alt="icon-map"><p>Ижевск</p></div>
+              </div>
+              <div class="col">
+                  <nav class="computer">
+                      <ul>
+                          <li><a href="#home">О нас</a></li>
+                          <li><a href="#news">Статьи</a></li>
+                          <li><a href="#contact">Форма подключения</a></li>
+                      </ul>
+                  </nav>
+              </div>
+              <div class="col">
+                  <div id="hamburger" class="mobile mobile-toggle">
+                    <img id="toggle-mobile" src="/img/icons/toggle-mobile.svg" alt="toggle-mobile">
+                    <img id="close-mobile" src="/img/icons/close-toggle.svg" alt="close-toggle" style="display: none;">
+
+                    <!-- <script>
+                    $(document).ready(function(){
+                      let iftoggle = false;
+                      $("#hamburger").click(function(){
+                          $("#top").toggleClass("topRotate");
+                          $("#bottom").toggleClass("bottomRotate");
+                          $("#background").toggleClass("expand");
+                          $("#dropDown").toggleClass("active");
+                          if(!iftoggle) {
+                            $("#toggle-mobile").hide();
+                            $("#close-mobile").show();
+                            iftoggle = true;
+                          } else {
+                            $("#toggle-mobile").show();
+                            $("#close-mobile").hide();
+                            iftoggle = false;
+                          }
+
+                          $("li").show();
+                          $("li").toggleClass("anim");
+                    
+                      });
+                    })
+                    </script> -->
+                  </div>
+                  <div class="signin computer hide"><p>Войти</p><img src="/img/icons/SignIn.svg" alt="SignIn"></div>
+              </div>
+          </div>
+      </div>
+      <div id="dropDown">
+        <div id="background">
+          <div class="container">
+            <div class="menu">
+              <a>О нас</a>
+              <a>Статьи</a>
+              <a>Форма подключения</a>
+            </div>
+            <div class="map-city mobile"><img src="/img/icons/icon-map.svg" alt="icon-map"><p>Ижевск</p></div>
+          </div>
+        </div>
+        
+      </div>
+  </header>
+  <div class="main feedback">
+    <div class="container">
+      <div class="row">
+        <h1>Обратная связь</h1>
+        <p>Если у вас возникли вопросы или предложения - напишите нам и мы ответим в течении суток.</p>
+        <input type="email" name="" id="">
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <nav>
+          <ul>
+              <li><a href="#home">Оплата ЖКХ</a></li>
+              <li><a href="#news">Оплата образования</a></li>
+              <li><a href="#contact">Оплата земли</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="row copyright">
+        <a>© FamilyPay 2022. Все права защищены</a>
+        <a href="#contact">Политика конфиденциальности</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

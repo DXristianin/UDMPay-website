@@ -141,7 +141,7 @@ $(document).ready(function(){
   };
   if (element) {
     let mask = IMask(element, maskOptions);
-  } else {
+  } else if (element2){
     let mask2 = IMask(element2, maskOptions);
   }
   
@@ -223,7 +223,5 @@ function openCredentails() {
 //Category search
 
 $(document).on("submit", "#search-form", function (e) {
-  var form = this;
-  e.preventDefault(); 
   $('.btn').toggleClass("btn-loading");
 });
