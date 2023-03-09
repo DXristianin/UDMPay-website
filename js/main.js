@@ -215,3 +215,15 @@ function openCredentails() {
   }
   
 }
+
+
+
+
+
+//Category search
+
+$(document).on("submit", "#search-form", function (e) {
+  var form = this;
+  e.preventDefault(); 
+  $('.btn').toggleClass("btn-loading");
+});
