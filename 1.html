@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UDM Pay</title>
+  <link rel="stylesheet" href="./styles/css/index.css">
+  <link rel="preconnect" href="https://rsms.me/">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="./js/main.js"></script>
+</head>
+<body>
+  <header>
+      <div class="container">
+          <div class="row">
+              <div class="col">
+                  <a href="/"><img class="logo" src="/img/icons/Logo.svg" alt="Logo"></a>
+              </div>
+              <div class="col">
+                  <div class="map-city computer"><img src="/img/icons/icon-map.svg" alt="icon-map"><p>Ижевск</p></div>
+              </div>
+              <div class="col">
+                  <nav class="computer">
+                      <ul>
+                          <li><a href="#home">О нас</a></li>
+                          <li><a href="#news">Статьи</a></li>
+                          <li><a href="#contact">Форма подключения</a></li>
+                      </ul>
+                  </nav>
+              </div>
+              <div class="col">
+                  <div id="hamburger" class="mobile mobile-toggle">
+                    <img id="toggle-mobile" src="/img/icons/toggle-mobile.svg" alt="toggle-mobile">
+                    <img id="close-mobile" src="/img/icons/close-toggle.svg" alt="close-toggle" style="display: none;">
+
+                    <!-- <script>
+                    $(document).ready(function(){
+                      let iftoggle = false;
+                      $("#hamburger").click(function(){
+                          $("#top").toggleClass("topRotate");
+                          $("#bottom").toggleClass("bottomRotate");
+                          $("#background").toggleClass("expand");
+                          $("#dropDown").toggleClass("active");
+                          if(!iftoggle) {
+                            $("#toggle-mobile").hide();
+                            $("#close-mobile").show();
+                            iftoggle = true;
+                          } else {
+                            $("#toggle-mobile").show();
+                            $("#close-mobile").hide();
+                            iftoggle = false;
+                          }
+
+                          $("li").show();
+                          $("li").toggleClass("anim");
+                    
+                      });
+                    })
+                    </script> -->
+                  </div>
+                  <div class="signin computer hide"><p>Войти</p><img src="/img/icons/SignIn.svg" alt="SignIn"></div>
+              </div>
+          </div>
+      </div>
+      <div id="dropDown">
+        <div id="background">
+          <div class="container">
+            <div class="menu">
+              <a>О нас</a>
+              <a>Статьи</a>
+              <a>Форма подключения</a>
+            </div>
+            <div class="map-city mobile"><img src="/img/icons/icon-map.svg" alt="icon-map"><p>Ижевск</p></div>
+          </div>
+        </div>
+        
+      </div>
+  </header>
+  <div class="main simple-page example">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1>Заголовок</h1>
+          <p>Учитывая ключевые сценарии поведения, высококачественный прототип будущего проекта напрямую зависит от направлений прогрессивного развития. Есть над чем задуматься: реплицированные с зарубежных источников, <a>пример какой-то ссылки</a> и по сей день остаются уделом либералов, которые жаждут быть подвергнуты целой серии независимых исследований. Значимость этих проблем настолько очевидна, что сложившаяся структура организации влечет за собой процесс внедрения и модернизации переосмысления внешнеэкономических политик.</p>
+          <h2>Подзаголовок</h2>
+          <p>Учитывая ключевые сценарии поведения, высококачественный прототип будущего проекта напрямую зависит от направлений прогрессивного развития. Есть над чем задуматься: реплицированные с зарубежных источников, <a>пример какой-то ссылки</a> и по сей день остаются уделом либералов, которые жаждут быть подвергнуты целой серии независимых исследований. Значимость этих проблем настолько очевидна, что сложившаяся структура организации влечет за собой процесс внедрения и модернизации переосмысления внешнеэкономических политик.</p>
+          <p>Вот вам яркий пример современных тенденций — базовый вектор развития выявляет срочную потребность распределения внутренних резервов и ресурсов. Разнообразный и богатый опыт говорит нам, что современная методология разработки говорит о возможностях своевременного выполнения сверхзадачи. В своём стремлении улучшить пользовательский опыт мы упускаем, что ключевые особенности структуры проекта являются только методом политического участия и ограничены исключительно образом мышления.</p>
+          <h2>Маркированный список</h2>
+          <ul>
+            <li>Пункт 1</li>
+            <li>Пункт 2</li>
+            <li>В своём стремлении улучшить пользовательский опыт мы упускаем, что ключевые особенности структуры проекта являются только методом политического участия и ограничены исключительно образом мышления.</li>
+          </ul>
+        </div>
+        <div class="col">
+          <div class="row">
+            <h3>Пример навигации</h3>
+            <ul>
+              <li>
+                <a href="">Подзаголовок</a>
+              </li>
+              <li>
+                <a href="">Маркированный список</a>
+              </li>
+              <li>
+                <a href="">Пункт 3</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="main simple-page example about-page">
+    <div class="container">
+      <div class="row">
+        <h1>Реквизиты ООО “Интернет решения”</h1>
+
+        <div class="props">
+          <div class="item">
+            <p>Полное наименование</p>
+            <span>Общество с ограниченной ответственностью “Интернет Решения”</span>
+          </div>
+          <div class="item">
+            <p>Юридический адрес </p>
+            <span>123112, г. Москва, Пресненская наб., д. 10, эт. 41, Пом. 1, комн. 6</span>
+          </div>
+          <div class="item">
+            <p>№ ОГРН</p>
+            <span>123112, г. Москва, Пресненская наб., д. 10, блок С, комплекс “Башня на набережной”</span>
+          </div>
+          <div class="item">
+            <p>ИНН</p>
+            <span>1027739244641</span>
+          </div>
+          <div class="item">
+            <p>КПП</p>
+            <span>9977500001</span>
+          </div>
+          <div class="item">
+            <p>Код по ОКПО</p>
+            <span>55185357</span>
+          </div>
+          <div class="item">
+            <p>ОКВЭД</p>
+            <span>52.47.1, 45.21, 45.21.1, 51.12.23</span>
+          </div>
+          <div class="item">
+            <p>ОКФС</p>
+            <span>23</span>
+          </div>
+          <div class="item">
+            <p>ОКОПФ</p>
+            <span>65</span>
+          </div>
+          <div class="item">
+            <p>Расчетный счет</p>
+            <span>40702810238040107758 в Московском банке Сбербанка России ПАО г. Москва</span>
+          </div>
+          <div class="item">
+            <p>Корреспондентский счет</p>
+            <span>30101810400000000225</span>
+          </div>
+          <div class="item">
+            <p>БИК</p>
+            <span>0445252255</span>
+          </div>
+          <div class="item">
+            <p>Генеральный директор</p>
+            <span>Константинопольский Константин Константинович</span>
+          </div>
+          <div class="item">
+            <p>Главный бухгалтер</p>
+            <span>Иванов Иван Иванович</span>
+          </div>
+        </div>
+        <a class="btn download">Скачать документом</a>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <nav>
+          <ul>
+              <li><a href="#home">Оплата ЖКХ</a></li>
+              <li><a href="#news">Оплата образования</a></li>
+              <li><a href="#contact">Оплата земли</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="row copyright">
+        <a>© FamilyPay 2022. Все права защищены</a>
+        <a href="#contact">Политика конфиденциальности</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

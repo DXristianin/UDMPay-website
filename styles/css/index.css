@@ -152,6 +152,7 @@ h4 {
   text-align: center;
   color: white;
   padding: 12px 45px;
+  cursor: pointer;
 }
 
 .btn:disabled {
@@ -1982,6 +1983,171 @@ footer .copyright a {
   .page-category .categories .body .categories-item span {
     font-size: 14px;
     line-height: 20px;
+  }
+}
+.simple-page {
+  background-color: white;
+  padding: 80px 0;
+}
+.simple-page a {
+  color: #336FEE;
+  text-decoration: underline;
+}
+.simple-page h1 {
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 56px;
+}
+.simple-page h2 {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 32px;
+}
+.simple-page h3 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
+.simple-page p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+.simple-page ul li {
+  display: block;
+}
+.simple-page ul li a {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+.simple-page.example p {
+  padding-bottom: 16px;
+}
+.simple-page.example h1, .simple-page.example h2 {
+  padding-bottom: 24px;
+}
+.simple-page.example p:nth-child(2), .simple-page.example p:nth-child(5) {
+  padding-bottom: 48px;
+}
+.simple-page.example > .container > .row > .col:first-child {
+  flex: 1 0 75%;
+  padding-right: 10%;
+}
+.simple-page.example > .container > .row > .col:first-child ul li {
+  display: block;
+  padding: 8px 0;
+  padding-left: 36px;
+  position: relative;
+}
+.simple-page.example > .container > .row > .col:first-child ul li:before {
+  content: " ";
+  width: 20px;
+  height: 2px;
+  display: block;
+  background: #336FEE;
+  position: absolute;
+  left: 0;
+  top: 17px;
+}
+.simple-page.example > .container > .row > .col:first-child ul li a {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+.simple-page.example > .container > .row > .col:last-child > .row {
+  flex-direction: column;
+  background-color: #F9FAFB;
+  border-radius: 8px;
+  padding: 24px;
+}
+.simple-page.example > .container > .row > .col:last-child > .row ul {
+  padding-top: 16px;
+}
+.simple-page.example > .container > .row > .col:last-child > .row ul li a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.simple-page.example > .container > .row > .col:last-child > .row ul li:not(:last-child) {
+  padding-bottom: 12px;
+}
+.simple-page.about-page .container .row {
+  max-width: 876px;
+  flex-direction: column;
+}
+.simple-page.about-page .container .row h1 {
+  padding-bottom: 48px;
+}
+.simple-page.about-page .container .row .props .item {
+  display: flex;
+  flex-direction: row;
+  padding: 8px;
+  -moz-text-align-last: left;
+       text-align-last: left;
+  flex-wrap: wrap;
+}
+.simple-page.about-page .container .row .props .item:not(:last-child) {
+  border-bottom: 1px solid #EAECF0;
+}
+.simple-page.about-page .container .row .props .item p {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  display: block;
+  flex: 1 0 318px;
+}
+.simple-page.about-page .container .row .props .item span {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  display: block;
+  flex: 100;
+}
+.simple-page.about-page .container .row .btn.download {
+  color: #336FEE;
+  background-color: #F0F5FF;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 12px 20px;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 12px;
+  margin-top: 40px;
+}
+@media (max-width: 660px) {
+  .simple-page.about-page .container .row .props .item p {
+    flex: 1 0 250px;
+  }
+}
+@media (max-width: 500px) {
+  .simple-page.about-page .container h1 {
+    font-size: 32px;
+    line-height: 44px;
+  }
+  .simple-page.about-page .container .row .props .item {
+    flex-direction: column;
+  }
+  .simple-page.about-page .container .row .props .item p {
+    flex: unset;
+  }
+}
+
+@media (max-width: 768px) {
+  .simple-page {
+    padding: 40px 0 80px 0;
+  }
+  .simple-page .container .row {
+    flex-direction: column;
+  }
+  .simple-page .container .row > .col:first-child {
+    padding: 0 !important;
+    order: 2;
+  }
+  .simple-page .container .row > .col:last-child > .row {
+    margin-bottom: 40px;
   }
 }
 .mobile {

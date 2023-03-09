@@ -97,9 +97,6 @@ $(document).ready(function(){
     console.log($(".page-category-search #search").val());
     if ($(".page-category-search #search").val().length > 5) {
       $('.page-category-search .search .btn').prop('disabled', false);
-      $('.search-indicator').show();
-      $('.page-category-search #search').css({'border': '1px solid #FF8C00'});
-      $('.search-result').show();
       if ($(window).width()<768) {
         $('.page-category-search .choose-service-type.body .btn').css({'margin-top': '20px'});
       }
