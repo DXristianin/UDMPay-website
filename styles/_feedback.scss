@@ -1,3 +1,113 @@
 .feedback {
-  
+  padding-top: 80px;
+
+  .container {
+
+    .row {
+      background: white;
+      border-radius: 16px;
+      flex-direction: column;
+      max-width: 652px;
+      margin: 0 auto;
+      padding: 32px;
+
+      h1 {
+
+        font-weight: 600 !important;
+        font-size: 26px !important;
+        line-height: 32px !important;
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        padding-top: 8px;
+        padding-bottom: 40px;
+      }
+
+      form {
+        flex-direction: column;
+        input, select, textarea {
+          background: #FFFFFF;
+          border: 1px solid $black-15;
+          border-radius: 8px;
+          padding: 12px 16px;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          color: $black-70;
+          width: 100%;
+          margin-bottom: 16px;
+          color: $black-90;
+
+          &::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+            color:    $black-70;
+          }
+          &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+            color:    $black-70;
+            opacity:  1;
+          }
+          &::-moz-placeholder { /* Mozilla Firefox 19+ */
+            color:    $black-70;
+            opacity:  1;
+          }
+          &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color:    $black-70;
+          }
+          &::-ms-input-placeholder { /* Microsoft Edge */
+            color:    $black-70;
+          }
+          
+          &::placeholder { /* Most modern browsers support this now. */
+            color:    $black-70;
+          }
+        }
+
+        .select-wrapper {
+          position: relative;
+
+          select {
+            -webkit-appearance: none;
+            position: relative;
+          }
+
+          &::before {
+            content: " ";
+            width: 16px;
+            height: 16px;
+            display: block;
+            background: url('/img/icons/CaretDown.png') center;
+            background-size: contain;
+            position: absolute;
+            right: 16px;
+            top: 17px;
+            z-index: 1;
+          }
+        }
+
+        .btn {
+          width: fit-content;
+          padding: 12px 20px;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 24px;
+          border-radius: 12px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 555px) {
+    .container {
+
+      .row {
+        padding: 24px;
+
+        .btn {
+          width: 100% !important;
+        }
+      }
+    }
+  }
 }
