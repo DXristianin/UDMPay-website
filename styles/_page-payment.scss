@@ -303,6 +303,28 @@
             color: $black-70;
             padding-right: 6px;
           }
+
+          .itooltip {
+            position: relative;
+            padding-top: 2px;
+
+            &:hover .tooltip {
+              display: block !important;
+            }
+          }
+
+          .tooltip {
+            display: none;
+            position: absolute;
+            background: #FFFFFF;
+            box-shadow: 0px 8px 32px rgba(12, 16, 24, 0.12);
+            border-radius: 12px;
+            padding: 16px;
+            z-index: 222;
+            width: 288px;
+            left: -125px;
+            top: 25px;
+          }
         }
 
         .input:nth-child(2) {
@@ -324,6 +346,7 @@
             font-weight: 400;
             font-size: 18px;
             line-height: 24px;
+            color: $black-90;
 
             &::placeholder {
               color: $black-90;
@@ -1056,5 +1079,5 @@
 
 
 #payment-window, .bookmarks, .bottom-buttons {
-  display: none !important;
+  // display: none !important;
 }

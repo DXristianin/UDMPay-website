@@ -1261,6 +1261,25 @@ footer .copyright a {
   color: #818798;
   padding-right: 6px;
 }
+.page-payment #payment-window .payment-body .content .row:first-child .itooltip {
+  position: relative;
+  padding-top: 2px;
+}
+.page-payment #payment-window .payment-body .content .row:first-child .itooltip:hover .tooltip {
+  display: block !important;
+}
+.page-payment #payment-window .payment-body .content .row:first-child .tooltip {
+  display: none;
+  position: absolute;
+  background: #FFFFFF;
+  box-shadow: 0px 8px 32px rgba(12, 16, 24, 0.12);
+  border-radius: 12px;
+  padding: 16px;
+  z-index: 222;
+  width: 288px;
+  left: -125px;
+  top: 25px;
+}
 .page-payment #payment-window .payment-body .content .input:nth-child(2) {
   font-weight: 500;
   font-size: 14px;
@@ -1279,6 +1298,7 @@ footer .copyright a {
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
+  color: #333844;
 }
 .page-payment #payment-window .payment-body .content .input:nth-child(2) input::-moz-placeholder {
   color: #333844;
@@ -1874,10 +1894,6 @@ footer .copyright a {
     padding-left: 24px;
   }
 }
-#payment-window, .bookmarks, .bottom-buttons {
-  display: none !important;
-}
-
 .page-category-search .category-search-content {
   background-color: white;
   max-width: 652px;

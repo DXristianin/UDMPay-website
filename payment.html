@@ -97,7 +97,7 @@
     </div>
     <a href="/" class="go-back"><img src="/img/icons/CaretLeft.svg" alt="CaretLeft"> Вернуться на главную</a>
   </div>
-  <div class="container" style="display: none;">
+  <div class="container" style="">
     <div>
       <img class="logo" src="/img/icons/Logo.svg" alt="Logo">
     </div>
@@ -179,7 +179,15 @@
     <div class="row payment-body" style="flex-direction: column;">
       <div class="content">
         <div class="row">
-          <p>Рекомендуемая сумма к оплате на 01.11.22</p><img src="/img/icons/WarningCircle.svg" alt="WarningCircle">
+          <p>Рекомендуемая сумма к оплате на 01.11.22</p>
+          <div class="itooltip">
+            <img src="/img/icons/WarningCircle.svg" alt="WarningCircle">
+            <div class="tooltip">
+              <p>
+                Рекомендуемая сумма к оплате рассчитывается, исходя из общей задолженности по счёту, и обновляется раз в месяц. 
+              </p>
+            </div>
+          </div>
         </div>
         <div class="input">
           <label for="total">Сумма к оплате, ₽</label>
