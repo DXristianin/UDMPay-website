@@ -1143,6 +1143,7 @@ footer .copyright a {
   border-radius: 0;
   padding: 0;
   border-radius: 16px;
+  width: 100%;
 }
 .page-payment #payment-window .payment-info {
   position: relative;
@@ -1664,6 +1665,7 @@ footer .copyright a {
   max-width: 430px;
   padding: 80px 0;
   margin: 0 auto;
+  width: 100%;
 }
 .page-payment .success-pay > .container {
   padding: 32px;
@@ -1731,6 +1733,7 @@ footer .copyright a {
 }
 .page-payment .error-pay {
   max-width: 430px;
+  width: 100%;
   padding: 80px 0;
   margin: 0 auto;
 }
