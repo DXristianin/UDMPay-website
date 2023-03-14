@@ -659,6 +659,117 @@ footer .copyright a {
   line-height: 20px;
 }
 
+.how-to-pay {
+  position: fixed;
+  z-index: 100;
+  padding-top: 30vh;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.how-to-pay .close {
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  font-size: 35px;
+  font-weight: bold;
+}
+.how-to-pay .container {
+  position: relative;
+  border-radius: 16px;
+  width: 652px;
+}
+.how-to-pay h2 {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 28px;
+  color: #333844;
+  padding-bottom: 24px;
+}
+.how-to-pay .search {
+  padding-bottom: 64px;
+  max-width: 100%;
+  width: 100%;
+}
+.how-to-pay .search .container-1 {
+  width: 100%;
+  background-color: white;
+}
+.how-to-pay .search .container-1 #search {
+  background: url("/img/icons/MagnifyingGlass.svg") no-repeat;
+  padding-left: 45px;
+  background-size: 20px;
+  background-position: 15px 50%;
+}
+.how-to-pay .search form {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+.how-to-pay .search form input#search {
+  flex: 0 1 100% !important;
+}
+.how-to-pay .search form .help-block {
+  padding-top: 4px;
+  order: 3;
+  color: #FB5A4F;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+@media (max-width: 768px) {
+  .how-to-pay .search form .help-block {
+    order: unset;
+    padding: 0;
+    padding-bottom: 8px;
+    margin-top: -10px;
+  }
+}
+.how-to-pay > .container:last-child > .row {
+  background-color: white;
+  padding: 8px 8px 8px 0px;
+  border-radius: 12px;
+  height: 538px;
+  overflow: auto;
+  flex-direction: column;
+}
+.how-to-pay > .container:last-child > .row h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #818798;
+  padding-bottom: 20px;
+  padding-left: 16px;
+  padding-top: 8px;
+}
+.how-to-pay > .container:last-child > .row .search-results .result-item {
+  border-bottom: 1px solid #EDEFF2;
+  display: block;
+}
+.how-to-pay > .container:last-child > .row .search-results .result-item .row {
+  padding: 12px;
+  padding-left: 16px;
+}
+.how-to-pay > .container:last-child > .row .search-results .result-item .row .col:first-child img {
+  width: 40px;
+  height: 40px;
+  margin-right: 12px;
+}
+.how-to-pay > .container:last-child > .row .search-results .result-item .row .col:last-child p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.how-to-pay > .container:last-child > .row .search-results .result-item .row .col:last-child span {
+  color: #ABAFBA;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
 .main {
   background: #F9FAFB;
   padding: 25px 0 80px 0;
@@ -2256,6 +2367,63 @@ footer .copyright a {
     flex: unset;
   }
 }
+.simple-page.privacy-page > .container > .row {
+  max-width: 835px;
+}
+.simple-page.privacy-page p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+.simple-page.privacy-page ul li {
+  display: flex;
+}
+.simple-page.privacy-page ul li p, .simple-page.privacy-page ul li span {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+.simple-page.privacy-page ul li p {
+  padding-left: 8px;
+  padding-bottom: 8px !important;
+}
+.simple-page.privacy-page ul li:first-child h2, .simple-page.privacy-page ul li:first-child span {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 32px;
+  padding-top: 48px;
+}
+.simple-page.privacy-page .props .item {
+  display: flex;
+  flex-direction: row;
+  padding: 8px 0;
+  -moz-text-align-last: left;
+       text-align-last: left;
+  flex-wrap: wrap;
+}
+.simple-page.privacy-page .props .item:not(:last-child) {
+  border-bottom: 1px solid #EAECF0;
+}
+.simple-page.privacy-page .props .item p {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  display: block;
+  flex: 1 0 318px;
+}
+.simple-page.privacy-page .props .item span {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  display: block;
+  flex: 100;
+}
+.simple-page.privacy-page .info-box {
+  background-color: #F9FAFB;
+  border-radius: 16px;
+  padding: 24px;
+  margin-top: 48px;
+}
 
 @media (max-width: 768px) {
   .simple-page {
@@ -2270,6 +2438,14 @@ footer .copyright a {
   }
   .simple-page .container .row > .col:last-child > .row {
     margin-bottom: 40px;
+  }
+}
+@media (max-width: 500px) {
+  .props .item {
+    flex-direction: column !important;
+  }
+  .props .item p {
+    flex: unset !important;
   }
 }
 .feedback {
