@@ -1,0 +1,50 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+@media (max-width: 380px) {
+    h1 {
+        font-size: 28px !important;
+        line-height: 34px !important;
+    }
+}
+
+.help-block {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  color: #818798;
+}
+
+.alert {
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+.alert-success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+.page-payment #payment-window #myModalPayment .container .body .row span {
+  color: #94979f;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.page-payment #payment-window .how-to-pay {
+  padding-top: 20vh;
+}
