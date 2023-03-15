@@ -89,9 +89,8 @@ $(document).ready(function(){
   console.log(data)
 
   let result = $('.search-results');
-
+  let errorMsg = '<span class="search-msg" style="padding-left:16px;">Ничего не найдено</span>';
   $('#search-ajax').on('input',function(e){
-    console.log('123123123');
     var search = $(this).val();
 		if ((search != '') && (search.length > 1)){
 			$.ajax({
@@ -101,16 +100,28 @@ $(document).ready(function(){
 				success: function(msg){
 					result.html(msg);
 					if(msg != ''){	
-						result.fadeIn();
+						msg.forEach(function(e) {
+              let myres = '<a class="result-item" href="'+e.url+'"> \
+              <div class="row"> \
+                <div class="col"> \
+                  <img src="'+e.logo+'" alt="'+e.name+'"> \
+                </div> \
+                <div class="col"> \
+                  <p>'+e.name+'</p> \
+                  <span>ИНН '+e.inn+'</span> \
+                </div> \
+              </div> \
+              </a>';
+              dataRes = dataRes + myres;
+            });
 					} else {
-						result.fadeOut(100);
+						result.html(errorMsg);
 					}
 				}
 			});
-		 } else {
-			result.html('<span class="search-msg" style="padding-left:16px;">Ничего не найдено</span>');
-			// result.fadeOut(100);
-		 }
+    } else {
+      result.html(errorMsg);
+    }
    });
 
   let dataRes = '';
