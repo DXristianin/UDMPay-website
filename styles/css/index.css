@@ -677,6 +677,7 @@ footer .copyright a {
 }
 
 .main-ajax-search {
+  display: none;
   position: fixed;
   z-index: 100;
   padding-top: 15vh;

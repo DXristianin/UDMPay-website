@@ -7,6 +7,11 @@ $(document).ready(function(){
 
   //ajax search main
 
+  $('#search-main').click(function() {
+    $('#myModalAjax').show();
+    $('#search-ajax').focus();
+  });
+
   const data = [
     {
       "name": 'МБОУ "СОШ № 3 ИМ. А.А. ИВАСЕНКО""',
