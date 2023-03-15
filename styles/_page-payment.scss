@@ -167,8 +167,19 @@
         &:first-child {
           // margin-bottom: 16px;
         }
-        a.SBP {
-          background: #1D1346;
+
+        button {
+          border: none;
+          cursor: pointer;
+          position: relative;
+
+          span {
+            color: white;
+          }
+        }
+
+        button.SBP {
+          background: #1D1346 !important;
           border-radius: 8px;
           text-align: center;
           color: white;
@@ -177,9 +188,13 @@
           justify-content: center;
           height: 52px;
           font-weight: bold;
+
+          &.btn-loading {
+
+          }
         }
 
-        a.sber-pay {
+        button.sber-pay {
           display: block;
           background: linear-gradient(90deg, #69E200 0%, #24DF64 53.65%, #2ED2C4 100%);
           border-radius: 8px;

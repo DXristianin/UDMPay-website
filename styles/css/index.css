@@ -651,12 +651,23 @@ footer nav a {
   line-height: 24px;
   margin-right: 24px;
 }
+footer .copyright {
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  footer .copyright > .col:first-child {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+}
 footer .copyright a {
   margin-right: 24px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+  opacity: 0.7;
 }
 
 .how-to-pay {
@@ -1268,8 +1279,16 @@ footer .copyright a {
   padding: 0;
   margin: 0 10px;
 }
-.page-payment #payment-window .payment .row a.SBP {
-  background: #1D1346;
+.page-payment #payment-window .payment .row button {
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+.page-payment #payment-window .payment .row button span {
+  color: white;
+}
+.page-payment #payment-window .payment .row button.SBP {
+  background: #1D1346 !important;
   border-radius: 8px;
   text-align: center;
   color: white;
@@ -1279,7 +1298,7 @@ footer .copyright a {
   height: 52px;
   font-weight: bold;
 }
-.page-payment #payment-window .payment .row a.sber-pay {
+.page-payment #payment-window .payment .row button.sber-pay {
   display: block;
   background: linear-gradient(90deg, #69E200 0%, #24DF64 53.65%, #2ED2C4 100%);
   border-radius: 8px;
@@ -1289,7 +1308,7 @@ footer .copyright a {
   padding: 12px 0;
   text-align: center;
 }
-.page-payment #payment-window .payment .row a.sber-pay::before {
+.page-payment #payment-window .payment .row button.sber-pay::before {
   content: "&nbsp;";
   display: block;
   color: rgba(240, 240, 240, 0);
@@ -2275,6 +2294,11 @@ footer .copyright a {
 }
 .simple-page.example > .container > .row {
   flex-direction: row;
+}
+@media (max-width: 768px) {
+  .simple-page.example > .container > .row {
+    flex-direction: column;
+  }
 }
 .simple-page.example > .container > .row > .col:first-child {
   flex: 1 0 75%;

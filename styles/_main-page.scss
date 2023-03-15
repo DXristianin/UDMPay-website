@@ -432,6 +432,16 @@ footer {
   }
 
   .copyright {
+    justify-content: space-between;
+
+    & > .col:first-child {
+
+      @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 20px;
+      }
+    }
 
     a {
       margin-right: 24px;
@@ -439,6 +449,7 @@ footer {
       font-weight: 400;
       font-size: 14px;
       line-height: 20px;
+      opacity: 0.7;
     }
   }
 
