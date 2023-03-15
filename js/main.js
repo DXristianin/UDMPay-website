@@ -124,7 +124,7 @@ $(document).ready(function(){
       $('.main-ajax-search .container2').show();
     }
    });
-
+   $('.main-ajax-search .container2').show();
   let dataRes = '';
 
   data.forEach(function(e) {

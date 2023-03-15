@@ -544,7 +544,7 @@ footer {
 
     & > .row {
       background-color: white;
-      padding: 8px 8px 8px 0px;
+      padding: 8px 0;
       border-radius: 12px;
       height: 538px;
       overflow: auto;
@@ -565,6 +565,10 @@ footer {
         .result-item {
           border-bottom: 1px solid $black-15;
           display: block;
+
+          &:hover {
+            background-color: $blue-light;
+          }
 
           .row {
             padding: 12px;

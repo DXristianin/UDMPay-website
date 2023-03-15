@@ -742,7 +742,7 @@ footer .copyright a {
 }
 .main-ajax-search > .container:last-child > .row {
   background-color: white;
-  padding: 8px 8px 8px 0px;
+  padding: 8px 0;
   border-radius: 12px;
   height: 538px;
   overflow: auto;
@@ -760,6 +760,9 @@ footer .copyright a {
 .main-ajax-search > .container:last-child > .row .search-results .result-item {
   border-bottom: 1px solid #EDEFF2;
   display: block;
+}
+.main-ajax-search > .container:last-child > .row .search-results .result-item:hover {
+  background-color: #F0F5FF;
 }
 .main-ajax-search > .container:last-child > .row .search-results .result-item .row {
   padding: 12px;
