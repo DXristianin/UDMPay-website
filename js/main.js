@@ -121,6 +121,7 @@ $(document).ready(function(){
 			});
     } else {
       result.html(errorMsg);
+      $('.main-ajax-search .container2').show();
     }
    });
 
