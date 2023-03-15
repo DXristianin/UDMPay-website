@@ -670,7 +670,7 @@ footer .copyright a {
   opacity: 0.7;
 }
 
-.how-to-pay {
+.main-ajax-search {
   position: fixed;
   z-index: 100;
   padding-top: 15vh;
@@ -681,50 +681,50 @@ footer .copyright a {
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.6);
 }
-.how-to-pay .close {
+.main-ajax-search .close {
   position: absolute;
   top: -50px;
   right: -50px;
   font-size: 35px;
   font-weight: bold;
 }
-.how-to-pay .container {
+.main-ajax-search .container {
   position: relative;
   border-radius: 16px;
   width: 652px;
   max-width: 100%;
 }
-.how-to-pay h2 {
+.main-ajax-search h2 {
   font-weight: 600;
   font-size: 22px;
   line-height: 28px;
   color: #333844;
   padding-bottom: 24px;
 }
-.how-to-pay .search-wrapper {
+.main-ajax-search .search-wrapper {
   padding-bottom: 16px;
   max-width: 100%;
   width: 100%;
 }
-.how-to-pay .search-wrapper .container-1 {
+.main-ajax-search .search-wrapper .container-1 {
   width: 100%;
   background-color: white;
 }
-.how-to-pay .search-wrapper .container-1 .search {
+.main-ajax-search .search-wrapper .container-1 .search {
   background: url("/img/icons/MagnifyingGlass.svg") no-repeat;
   padding-left: 45px;
   background-size: 20px;
   background-position: 15px 50%;
 }
-.how-to-pay .search-wrapper form {
+.main-ajax-search .search-wrapper form {
   position: relative;
   display: flex;
   flex-wrap: wrap;
 }
-.how-to-pay .search-wrapper form input.search {
+.main-ajax-search .search-wrapper form input.search {
   flex: 0 1 100% !important;
 }
-.how-to-pay .search-wrapper form .help-block {
+.main-ajax-search .search-wrapper form .help-block {
   padding-top: 4px;
   order: 3;
   color: #FB5A4F;
@@ -733,14 +733,14 @@ footer .copyright a {
   line-height: 20px;
 }
 @media (max-width: 768px) {
-  .how-to-pay .search-wrapper form .help-block {
+  .main-ajax-search .search-wrapper form .help-block {
     order: unset;
     padding: 0;
     padding-bottom: 8px;
     margin-top: -10px;
   }
 }
-.how-to-pay > .container:last-child > .row {
+.main-ajax-search > .container:last-child > .row {
   background-color: white;
   padding: 8px 8px 8px 0px;
   border-radius: 12px;
@@ -748,7 +748,7 @@ footer .copyright a {
   overflow: auto;
   flex-direction: column;
 }
-.how-to-pay > .container:last-child > .row h3 {
+.main-ajax-search > .container:last-child > .row h3 {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -757,25 +757,25 @@ footer .copyright a {
   padding-left: 16px;
   padding-top: 8px;
 }
-.how-to-pay > .container:last-child > .row .search-results .result-item {
+.main-ajax-search > .container:last-child > .row .search-results .result-item {
   border-bottom: 1px solid #EDEFF2;
   display: block;
 }
-.how-to-pay > .container:last-child > .row .search-results .result-item .row {
+.main-ajax-search > .container:last-child > .row .search-results .result-item .row {
   padding: 12px;
   padding-left: 16px;
 }
-.how-to-pay > .container:last-child > .row .search-results .result-item .row .col:first-child img {
+.main-ajax-search > .container:last-child > .row .search-results .result-item .row .col:first-child img {
   width: 40px;
   height: 40px;
   margin-right: 12px;
 }
-.how-to-pay > .container:last-child > .row .search-results .result-item .row .col:last-child p {
+.main-ajax-search > .container:last-child > .row .search-results .result-item .row .col:last-child p {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
 }
-.how-to-pay > .container:last-child > .row .search-results .result-item .row .col:last-child span {
+.main-ajax-search > .container:last-child > .row .search-results .result-item .row .col:last-child span {
   color: #ABAFBA;
   font-weight: 400;
   font-size: 14px;

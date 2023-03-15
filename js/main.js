@@ -323,6 +323,8 @@ function openModal(modal) {
   } else if (modal == 3) {
     document.getElementById("myModalPayment").style.display = "none";
     document.getElementById("myModal").style.display = "block";
+  } else if (modal == 4) {
+    document.getElementById("myModalAjax").style.display = "block";
   } else {
     document.getElementById("myModal").style.display = "block";
   }
@@ -338,6 +340,8 @@ function closeModal(modal) {
   } else if (modal == 3) {
     document.getElementById("myModal").style.display = "none";
     document.getElementById("myModalPayment").style.display = "block";
+  } else if (modal == 4) {
+    document.getElementById("myModalAjax").style.display = "none";
   } else {
     document.getElementById("myModal").style.display = "none";
   }
