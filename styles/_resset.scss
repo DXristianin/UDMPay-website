@@ -377,3 +377,10 @@ input[aria-invalid=true] {
     }
   }
 }
+
+@media (max-width: 800px) {
+  .close {
+    right: 15px !important;
+    top: -60px !important;
+  }
+}
