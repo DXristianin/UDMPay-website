@@ -85,7 +85,7 @@
       justify-content: center;
     }
 
-    .search .container-1 {
+    .search-wrapper .container-1 {
       text-align: left;
       width: 464px;
     }
@@ -216,14 +216,14 @@
       margin-bottom: 32px;
     }
 
-    .search .container-1 {
+    .search-wrapper .container-1 {
       width: 100%;
 
       .icon {
         display: none;
       }
 
-      input#search {
+      input.search {
         padding: 12px !important;
         font-size: 16px;
         line-height: 24px;

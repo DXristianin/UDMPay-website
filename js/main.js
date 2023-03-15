@@ -2,6 +2,136 @@ let chevronFlag = false;
 
 //Header Menu
 $(document).ready(function(){
+
+
+
+  //ajax search main
+
+  const data = [
+    {
+      "name": 'МБОУ "СОШ № 3 ИМ. А.А. ИВАСЕНКО""',
+      "logo": "/img/icons/Картинка.svg",
+      "inn": "213122312",
+     "category_name": "Комунальные услуги",
+      "url": "/rir",
+    },
+    {
+      "name": "Квадра ООО",
+      "logo": "/img/icons/Картинка.svg",
+      "inn": "454543",
+      "category_name": "Комунальные услуги",
+      "url": "/kvadra"
+    },
+    {
+      "name": "Квадра ООО",
+      "logo": "/img/icons/Картинка.svg",
+      "inn": "454543",
+      "category_name": "Комунальные услуги",
+      "url": "/kvadra"
+    },
+    {
+      "name": "Квадра ООО",
+      "logo": "/img/icons/Картинка.svg",
+      "inn": "454543",
+      "category_name": "Комунальные услуги",
+      "url": "/kvadra"
+    },
+    {
+      "name": "Квадра ООО",
+      "logo": "/img/icons/Картинка.svg",
+      "inn": "454543",
+      "category_name": "Комунальные услуги",
+      "url": "/kvadra"
+    },
+    {
+      "name": "Квадра ООО",
+      "logo": "/img/icons/Картинка.svg",
+      "inn": "454543",
+      "category_name": "Комунальные услуги",
+      "url": "/kvadra"
+    },
+    {
+      "name": "Квадра ООО",
+      "logo": "/img/icons/Картинка.svg",
+      "inn": "454543",
+      "category_name": "Комунальные услуги",
+      "url": "/kvadra"
+    },
+    {
+      "name": "Квадра ООО",
+      "logo": "/img/icons/Картинка.svg",
+      "inn": "454543",
+      "category_name": "Комунальные услуги",
+      "url": "/kvadra"
+    },
+    {
+      "name": "Квадра ООО",
+      "logo": "/img/icons/Картинка.svg",
+      "inn": "454543",
+      "category_name": "Комунальные услуги",
+      "url": "/kvadra"
+    },
+    {
+      "name": "Квадра ООО",
+      "logo": "/img/icons/Картинка.svg",
+      "inn": "454543",
+      "category_name": "Комунальные услуги",
+      "url": "/kvadra"
+    },
+    {
+      "name": "Квадра ООО",
+      "logo": "/img/icons/Картинка.svg",
+      "inn": "454543",
+      "category_name": "Комунальные услуги",
+      "url": "/kvadra"
+    }
+    ];
+  console.log(data)
+
+  let result = $('.search-results');
+
+  $('#search-ajax').on('input',function(e){
+    console.log('123123123');
+    var search = $(this).val();
+		if ((search != '') && (search.length > 1)){
+			$.ajax({
+				type: "POST",
+				url: "/ajax_search.php",
+				data: {'search': search},
+				success: function(msg){
+					result.html(msg);
+					if(msg != ''){	
+						result.fadeIn();
+					} else {
+						result.fadeOut(100);
+					}
+				}
+			});
+		 } else {
+			result.html('<span class="search-msg" style="padding-left:16px;">Ничего не найдено</span>');
+			// result.fadeOut(100);
+		 }
+   });
+
+  let dataRes = '';
+
+  data.forEach(function(e) {
+    console.log(e);
+    let myres = '<a class="result-item" href="'+e.url+'"> \
+    <div class="row"> \
+      <div class="col"> \
+        <img src="'+e.logo+'" alt="'+e.name+'"> \
+      </div> \
+      <div class="col"> \
+        <p>'+e.name+'</p> \
+        <span>ИНН '+e.inn+'</span> \
+      </div> \
+    </div> \
+  </a>';
+    dataRes = dataRes + myres;
+  });
+  result.html(dataRes);
+
   let iftoggle = false;
   $("#hamburger").click(function(){
       $("#top").toggleClass("topRotate");

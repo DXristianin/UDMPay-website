@@ -30,10 +30,10 @@
         margin-bottom: 24px;
       }
 
-      .search {
+      .search-wrapper {
         form {
           position: relative;
-          input#search {
+          input.search {
             flex: 0 1 70% !important;
           }
           .btn {

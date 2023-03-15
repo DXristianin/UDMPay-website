@@ -14,7 +14,7 @@
       padding-bottom: 40px;
     }
 
-    .search {
+    .search-wrapper {
       width: 652px;
       padding-bottom: 64px;
       max-width: 100%;
@@ -22,7 +22,7 @@
       .container-1 {
         background-color: unset;
 
-        #search {
+        .search {
           background: url("/img/icons/MagnifyingGlass.svg") no-repeat;
           padding-left: 45px;
           background-size: 20px;
